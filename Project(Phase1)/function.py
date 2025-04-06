@@ -9,22 +9,23 @@ def parse_xml(xml_path):
         'height': root.find('size/height').text,
         'depth': root.find('size/depth').text
     }
-    
-    object = {
-        'difficult': False if root.find('object/difficult').text == '0' else True,
-        'bndbox': {
-            'xmin': root.find('object/bndbox/xmin').text,
-            'ymin': root.find('object/bndbox/ymin').text,
-            'xmax': root.find('object/bndbox/xmax').text,
-            'ymax': root.find('object/bndbox/ymax').text
-        }
-    }
+        
+    objects = [{
+            'difficult': False if object.find('difficult').text == '0' else True,
+            'bndbox': {
+                'xmin': object.find('bndbox/xmin').text,
+                'ymin': object.find('bndbox/ymin').text,
+                'xmax': object.find('bndbox/xmax').text,
+                'ymax': object.find('bndbox/ymax').text,
+            }
+        } for object in root.findall('object')]
+        
         
     extracted_info = {
         'folder': root.find('folder').text,
         'filename': root.find('filename').text,
         'size': size,
-        'object': object
+        'objects': objects
     }
     
     return extracted_info    
