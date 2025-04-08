@@ -12,13 +12,11 @@ def parse_xml(xml_path):
         
     objects = [{
             'difficult': False if object.find('difficult').text == '0' else True,
-            'bndbox': {
-                'xmin': object.find('bndbox/xmin').text,
-                'ymin': object.find('bndbox/ymin').text,
-                'xmax': object.find('bndbox/xmax').text,
-                'ymax': object.find('bndbox/ymax').text,
-            }
-        } for object in root.findall('object')]
+            'bndbox': (
+                int(object.find('bndbox/xmin').text),
+                int(object.find('bndbox/ymin').text),
+                int(object.find('bndbox/xmax').text),
+                int(object.find('bndbox/ymax').text))}  for object in root.findall('object')]
         
         
     extracted_info = {
