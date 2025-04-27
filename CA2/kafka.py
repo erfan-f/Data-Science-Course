@@ -1,11 +1,18 @@
 import threading
 import subprocess
+import sys
+
+# def run_producer():
+#     subprocess.run(["python3", "producer.py"])
+
+# def run_consumer():
+#     subprocess.run(["python3", "consumer.py"])
 
 def run_producer():
-    subprocess.run(["python3", "producer.py"])
+    subprocess.run([sys.executable, "producer.py"], check=True)
 
 def run_consumer():
-    subprocess.run(["python3", "consumer.py"])
+    subprocess.run([sys.executable, "consumer.py"], check=True)
 
 producer_thread = threading.Thread(target=run_producer)
 consumer_thread = threading.Thread(target=run_consumer)

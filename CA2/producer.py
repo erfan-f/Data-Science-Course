@@ -171,6 +171,7 @@ fraud_rate = float(os.getenv("FRAUD_RATE", 0.02))
 declined_rate = float(os.getenv("DECLINED_RATE", 0.05))
 merchant_count = int(os.getenv("MERCHANT_COUNT", 50))
 customer_count = int(os.getenv("CUSTOMER_COUNT", 1000))
+
 kafka_broker = os.getenv("KAFKA_BROKER", "localhost:9092")
 topic = "darooghe.transactions"
 event_init_mode = os.getenv("EVENT_INIT_MODE", "flush").lower()
