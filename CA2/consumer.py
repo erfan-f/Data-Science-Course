@@ -76,7 +76,7 @@ def validate_transaction(txn, kafka_time):
         os_type = txn.get("device_info", {}).get("os")
         if os_type not in VALID_OS:
             errors.append("ERR_DEVICE")
-
+   
     return errors
 
 print("🔄 Starting Kafka consumer...")

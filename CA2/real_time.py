@@ -38,6 +38,8 @@ spark = SparkSession.builder \
     .config("spark.mongodb.output.uri", "mongodb://localhost:27017/darooghe.customer_history") \
     .getOrCreate()
 
+customer_history_df = spark.read.format("mongo").option("uri", "mongodb://localhost:27017/daroogheDB.transactions").load()
+
 # ---------------------------------------------------------------------
 KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
 INPUT_TOPIC = 'darooghe.transactions'
