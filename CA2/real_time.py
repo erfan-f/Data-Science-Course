@@ -139,11 +139,6 @@ query = fraud_alerts.writeStream \
 query.awaitTermination()
 
 
-
-
-
-
-
 # Real-Time Commission Analytics 
 
 commission_by_type = valid_transactions.groupBy(
