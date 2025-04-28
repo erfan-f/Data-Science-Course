@@ -27,7 +27,10 @@ transaction_schema = StructType([
     StructField("failure_reason", StringType())
 ])
 
-# this part is fine parsa, you just need to get the link and get faimilair with erfan's db 
+#------------------------------------------------------------------------------------------------------
+
+# this part is fine parsa, you just need to get the link and get faimilair with erfan's db
+# this part is for connecting mongodb to spark
 spark = SparkSession.builder \
     .appName("RealTimeFraudDetection") \
     .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,org.mongodb.spark:mongo-spark-connector_2.12:3.0.1") \
@@ -35,11 +38,15 @@ spark = SparkSession.builder \
     .config("spark.mongodb.output.uri", "mongodb://localhost:27017/darooghe.customer_history") \
     .getOrCreate()
 
+# ---------------------------------------------------------------------
+KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
+INPUT_TOPIC = 'darooghe.transactions'
+
 valid_transactions_json = spark \
     .readStream \
     .format("kafka") \
-    .option("kafka.bootstrap.servers", "localhost:9092") \
-    .option("subscribe", "darooghe.valid_transactions") \
+    .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS) \
+    .option("subscribe", INPUT_TOPIC) \
     .load()
 
 valid_transactions = valid_transactions_json.select(
@@ -48,7 +55,6 @@ valid_transactions = valid_transactions_json.select(
     "timestamp", 
     to_timestamp(col("timestamp"), "yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z'")
 )
-
 
 def haversine(lat1, lon1, lat2, lon2):
     R = 6371.0
@@ -76,6 +82,7 @@ historical_data = spark.read \
 
 
 def detect_fraud(transactions_df, hist_df):
+
     velocity_alerts = transactions_df.groupBy(
         col("customer_id"),
         window(col("timestamp"), "2 minutes")
