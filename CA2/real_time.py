@@ -1,9 +1,10 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.types import *
-from pyspark.sql.functions import from_json, col, window, to_timestamp, count, lit, udf, avg,desc,sum,to_json, struct
-import math
+from pyspark.sql.functions import from_json, col, window, to_timestamp, count, lit, udf, avg, desc, sum, to_json, struct, unix_timestamp, rank
+from pyspark.sql.functions import window, count, sum as sum_, desc
 from pyspark.sql.types import DoubleType
-
+from pyspark.sql.window import Window
+import math
 
 
 transaction_schema = StructType([
@@ -27,22 +28,20 @@ transaction_schema = StructType([
     StructField("failure_reason", StringType())
 ])
 
-#------------------------------------------------------------------------------------------------------
+# -------------------------------------------------Spark Streaming Application------------------------------------------------
 
-# this part is fine parsa, you just need to get the link and get faimilair with erfan's db
-# this part is for connecting mongodb to spark
 spark = SparkSession.builder \
     .appName("RealTimeFraudDetection") \
-    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,org.mongodb.spark:mongo-spark-connector_2.12:3.0.1") \
-    .config("spark.mongodb.input.uri", "mongodb://localhost:27017/darooghe.customer_history") \
-    .config("spark.mongodb.output.uri", "mongodb://localhost:27017/darooghe.customer_history") \
+    .config("spark.jars.packages", 
+            "org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,"
+            "org.mongodb.spark:mongo-spark-connector_2.12:3.0.1") \
+    .config("spark.mongodb.input.uri", "mongodb://localhost:27017/daroogheDB.transactions") \
+    .config("spark.mongodb.output.uri", "mongodb://localhost:27017/daroogheDB.transactions") \
     .getOrCreate()
 
-customer_history_df = spark.read.format("mongo").option("uri", "mongodb://localhost:27017/daroogheDB.transactions").load()
-
-# ---------------------------------------------------------------------
 KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
 INPUT_TOPIC = 'darooghe.transactions'
+NEW_INSIGHT = 'darooghe.analytics'
 
 valid_transactions_json = spark \
     .readStream \
@@ -58,6 +57,38 @@ valid_transactions = valid_transactions_json.select(
     to_timestamp(col("timestamp"), "yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z'")
 )
 
+# Example Insight: Number of transactions per customer in 1-minute windows sliding every 20 seconds
+transactions_per_customer = valid_transactions \
+    .withWatermark("timestamp", "2 minutes") \
+    .groupBy(
+        window(col("timestamp"), "1 minute", "20 seconds"),
+        col("customer_id")
+    ) \
+    .agg(count("*").alias("transaction_count")) \
+    .select(
+        col("window.start").alias("window_start"),
+        col("window.end").alias("window_end"),
+        "customer_id",
+        "transaction_count"
+    )
+
+# Write insight to a new Kafka topic
+query = transactions_per_customer \
+    .selectExpr("to_json(struct(*)) AS value") \
+    .writeStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS) \
+    .option("topic", NEW_INSIGHT) \
+    .option("checkpointLocation", "/tmp/spark-checkpoint-analytics") \
+    .outputMode("update") \
+    .start()
+
+query.awaitTermination()
+
+# ---------------------------------------------------Fraud Detection System----------------------------------------------------
+
+FRAUD_TOPIC = 'darooghe.fraud_alerts'
+
 def haversine(lat1, lon1, lat2, lon2):
     R = 6371.0
     phi1, phi2 = math.radians(lat1), math.radians(lat2)
@@ -68,23 +99,8 @@ def haversine(lat1, lon1, lat2, lon2):
 
 haversine_udf = udf(haversine, DoubleType())
 
-
-#this part,parsa
-historical_data = spark.read \
-    .format("mongo") \
-    .option("collection", "customer_history") \
-    .load() \
-    .select(
-        col("customer_id"),
-        col("average_transaction_amount"),
-        col("last_known_location.lat").alias("hist_lat"),
-        col("last_known_location.lng").alias("hist_lng")
-    )
-
-
-
-def detect_fraud(transactions_df, hist_df):
-
+def detect_fraud(transactions_df, customer_avg_df):
+    # Velocity Check
     velocity_alerts = transactions_df.groupBy(
         col("customer_id"),
         window(col("timestamp"), "2 minutes")
@@ -97,13 +113,13 @@ def detect_fraud(transactions_df, hist_df):
         col("window.start").alias("window_start"),
         col("window.end").alias("window_end")
     )
-    
-    # this part is completely chatgpt , not tested
+
+    # Geographical Impossibility
     geo_alerts = transactions_df.alias("t1").join(
         transactions_df.alias("t2"),
         (col("t1.customer_id") == col("t2.customer_id")) &
-        (col("t1.timestamp") < col("t2.timestamp")) &
-        ((col("t2.timestamp").cast("long") - col("t1.timestamp").cast("long")) <= 300)
+        (unix_timestamp(col("t2.timestamp")) - unix_timestamp(col("t1.timestamp")) <= 300) &
+        (unix_timestamp(col("t2.timestamp")) > unix_timestamp(col("t1.timestamp")))
     ).withColumn(
         "distance_km",
         haversine_udf(col("t1.lat"), col("t1.lng"), col("t2.lat"), col("t2.lng"))
@@ -115,86 +131,108 @@ def detect_fraud(transactions_df, hist_df):
         col("t1.timestamp").alias("window_start"),
         col("t2.timestamp").alias("window_end")
     )
-    
-    # this part might need a few tweaks(not tested)
+
+    # Amount Anomaly
     amount_alerts = transactions_df.join(
-        hist_df, "customer_id"
+        customer_avg_df, "customer_id"
     ).filter(
-        col("amount") > (col("average_transaction_amount") * 10)
+        col("amount") > (col("average_amount") * 10)
     ).select(
         col("customer_id"),
         lit("AMOUNT_ANOMALY").alias("fraud_type"),
-        lit("Transaction >10x customer average").alias("description"),
+        lit("Transaction amount >10x customer average").alias("description"),
         col("timestamp").alias("window_start"),
         col("timestamp").alias("window_end")
     )
-    
-
 
     return velocity_alerts.union(geo_alerts).union(amount_alerts)
 
 
-fraud_alerts = detect_fraud(valid_transactions, historical_data)
+customer_history_df = spark.read.format("mongo").load()
+customer_avg_df = customer_history_df.groupBy("customer_id").agg(
+    avg("amount").alias("average_amount")
+)
 
+fraud_alerts = detect_fraud(valid_transactions, customer_avg_df)
 
-query = fraud_alerts.writeStream \
+fraud_alerts_query = fraud_alerts.selectExpr("to_json(struct(*)) AS value") \
+    .writeStream \
     .format("kafka") \
-    .option("kafka.bootstrap.servers", "localhost:9092") \
-    .option("topic", "darooghe.fraud_alerts") \
+    .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS) \
+    .option("topic", FRAUD_TOPIC) \
     .option("checkpointLocation", "/tmp/fraud_alerts_checkpoint") \
-    .outputMode("update") \
+    .outputMode("append") \
     .start()
 
-query.awaitTermination()
+fraud_alerts_query.awaitTermination()
 
+# -------------------------------------------------Real-Time Commission Analytics --------------------------------------------------
 
-# Real-Time Commission Analytics 
-
+# 1. Total commission by type per 1 minute
 commission_by_type = valid_transactions.groupBy(
-    col("commission_type"),
-    window(col("timestamp"), "5 minutes")
+    window(col("timestamp"), "1 minute"),
+    col("commission_type")
 ).agg(
     sum(col("commission_amount")).alias("total_commission")
 )
 
-commission_ratio = valid_transactions.groupBy(
-    col("merchant_category"),
-    window(col("timestamp"), "5 minutes")
-).agg(
-    (sum("commission_amount") / sum("amount")).alias("commission_ratio")
-)
-
-
-top_merchant = valid_transactions.groupBy(
-    col("merchant_id"),
-    window(col("timestamp"), "5 minutes")
-).agg(
-    sum("commission_amount").alias("total_commission")
-).orderBy(desc("total_commission")).limit(1)
-
-
-combined_metrics = commission_by_type.join(
-    commission_ratio, ["window"]
-).join(
-    top_merchant, ["window"]
-).select(
-    col("window.start").alias("window_start"),
-    col("window.end").alias("window_end"),
-    col("commission_type"),
-    col("total_commission"),
-    col("merchant_category"),
-    col("commission_ratio"),
-    col("merchant_id").alias("highest_commission_merchant"),
-    col("total_commission").alias("highest_commission_total")
-)
-
-
-combined_metrics.selectExpr(
-    "CAST(null AS STRING) AS key", 
+commission_by_type_query = commission_by_type.selectExpr(
     "to_json(struct(*)) AS value"
 ).writeStream \
     .format("kafka") \
     .option("kafka.bootstrap.servers", "localhost:9092") \
-    .option("topic", "darooghe.commissions_metrics") \
-    .option("checkpointLocation", "/tmp/checkpoints/commissions_metrics") \
+    .option("topic", "darooghe.commission_by_type") \
+    .option("checkpointLocation", "/tmp/checkpoints/commission_by_type") \
+    .outputMode("update") \
     .start()
+
+
+# 2. Commission ratio by merchant category per 5 minutes
+commission_ratio = valid_transactions.groupBy(
+    window(col("timestamp"), "5 minutes"),
+    col("merchant_category")
+).agg(
+    (sum("commission_amount") / sum("amount")).alias("commission_ratio")
+)
+
+commission_ratio_query = commission_ratio.selectExpr(
+    "to_json(struct(*)) AS value"
+).writeStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", "localhost:9092") \
+    .option("topic", "darooghe.commission_ratio") \
+    .option("checkpointLocation", "/tmp/checkpoints/commission_ratio") \
+    .outputMode("update") \
+    .start()
+
+
+# 3. Highest commission-generating merchants per 5 minutes
+merchant_commission = valid_transactions.groupBy(
+    window(col("timestamp"), "5 minutes"),
+    col("merchant_id")
+).agg(
+    sum("commission_amount").alias("total_commission")
+)
+
+# Use ranking to get top merchant
+w = Window.partitionBy("window").orderBy(desc("total_commission"))
+
+top_merchants = merchant_commission.withColumn(
+    "rank", rank().over(w)
+).filter(
+    col("rank") == 1
+).drop("rank")
+
+top_merchants_query = top_merchants.selectExpr(
+    "to_json(struct(*)) AS value"
+).writeStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", "localhost:9092") \
+    .option("topic", "darooghe.top_merchant") \
+    .option("checkpointLocation", "/tmp/checkpoints/top_merchant") \
+    .outputMode("complete") \
+    .start()
+
+commission_by_type_query.awaitTermination()
+commission_ratio_query.awaitTermination()
+top_merchants_query.awaitTermination()
