@@ -185,6 +185,6 @@ elif event_init_mode == "skip":
 conf = {"bootstrap.servers": kafka_broker}
 producer = Producer(conf)
 if not skip_initial:
-    produce_historical_events(producer, topic, count=20000)
+    produce_historical_events(producer, topic, count=40000)
 logging.info("Starting continuous event production...")
 continuous_event_production(producer, topic, base_rate=EVENT_RATE)
