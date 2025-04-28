@@ -64,21 +64,19 @@ def convert_and_validate(msg: dict):
 
 def validate_transaction(txn, kafka_time):
     errors = []
-    try:
-        if txn["total_amount"] != txn["amount"] + txn["vat_amount"] + txn["commission_amount"]:
-            errors.append("ERR_AMOUNT")
+    
+    if txn["total_amount"] != txn["amount"] + txn["vat_amount"] + txn["commission_amount"]:
+        errors.append("ERR_AMOUNT")
 
-        txn_time = datetime.datetime.fromisoformat(txn["timestamp"].replace("Z", ""))
-        if txn_time > kafka_time or txn_time < kafka_time - datetime.timedelta(days=1):
-            errors.append("ERR_TIME")
+    txn_time = datetime.datetime.fromisoformat(txn["timestamp"].replace("Z", ""))
+    if txn_time > kafka_time or txn_time < kafka_time - datetime.timedelta(days=1):
+        errors.append("ERR_TIME")
 
-        if txn["payment_method"] == "mobile":
-            os_type = txn.get("device_info", {}).get("os")
-            if os_type not in VALID_OS:
-                errors.append("ERR_DEVICE")
-    except Exception as e:
-        print(f"[Validation Error]: {e}")
-        errors.append("ERR_VALIDATION_EXCEPTION")
+    if txn["payment_method"] == "mobile":
+        os_type = txn.get("device_info", {}).get("os")
+        if os_type not in VALID_OS:
+            errors.append("ERR_DEVICE")
+   
     return errors
 
 print("🔄 Starting Kafka consumer...")
