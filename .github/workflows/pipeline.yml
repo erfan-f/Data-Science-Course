@@ -24,4 +24,4 @@ jobs:
       - name: Run pipeline script
         working-directory: ./project
         run: |
-          python project/pipeline.py
+          python3 pipeline.py
