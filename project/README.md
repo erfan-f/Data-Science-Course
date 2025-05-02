@@ -92,8 +92,8 @@ scikit-learn
 
 ---
 
-## 👥 Contributors (Alphabetical Order)
+## 👥 Contributors
 
-* Parsa Bukani - SID 810102501
-* Mani Hosseini - SID ...
-* Erfan Falahati - SID ... 
+* Parsa Bukani - SID: 810102501
+* Mani Hosseini - SID: 810102552
+* Erfan Falahati - SID: 810102491
