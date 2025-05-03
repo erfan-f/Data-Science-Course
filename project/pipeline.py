@@ -1,5 +1,6 @@
 import sys
 import subprocess
+import os
 
 def run_script(script_path: str):
     print(f"\n▶️ Running {script_path}...")
@@ -12,8 +13,8 @@ def run_script(script_path: str):
 
 if __name__ == "__main__":
     scripts = [
-        "scripts/feature_engineering.py",
-        "scripts/preprocess.py",
+        os.path.join('scripts', 'feature_engineering.py'),
+        os.path.join('scripts', 'preprocess.py')
     ]
     for script in scripts:
         run_script(script)

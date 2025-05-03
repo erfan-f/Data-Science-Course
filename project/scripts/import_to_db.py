@@ -1,10 +1,20 @@
 import sqlite3
 import pandas as pd
+import os
 
-df = pd.read_excel('content/car_plate_annotations.xlsx')
-df['image_path'] = 'content/images/' + df['filename']
 
-conn = sqlite3.connect('database/dataset.db')
+excel_path = os.path.join('content', 'car_plate_annotations.xlsx')
+
+df = pd.read_excel(excel_path)
+
+df['image_path'] = df['filename'].apply(lambda x: os.path.join('content', 'images', x))
+
+
+
+
+db_path = os.path.join('database', 'dataset.db')
+
+conn = sqlite3.connect(db_path)
 
 df.to_sql(
     name='image_annotations',

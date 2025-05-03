@@ -5,7 +5,8 @@ from sklearn.preprocessing import MinMaxScaler
 from database_connection import get_connection , get_cursor
 from load_data import load_joined_data
 
-def preprocess_plate_images(output_folder='content/plates', resize_method='mean', row_limit=None):
+
+def preprocess_plate_images(output_folder=os.path.join('content', 'plates'), resize_method='mean', row_limit=None):
 
     print("📥 Loading data from database...")
     df = load_joined_data(row_limit=row_limit)
