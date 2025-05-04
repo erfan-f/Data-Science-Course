@@ -13,6 +13,7 @@ def run_script(script_path: str):
 
 if __name__ == "__main__":
     scripts = [
+        os.path.join('scripts', 'import_to_db.py'),
         os.path.join('scripts', 'feature_engineering.py'),
         os.path.join('scripts', 'preprocess.py')
     ]
