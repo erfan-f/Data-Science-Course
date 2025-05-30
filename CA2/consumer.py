@@ -6,20 +6,19 @@ from confluent_kafka import Consumer, Producer
 KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
 INPUT_TOPIC = 'darooghe.transactions'
 ERROR_TOPIC = 'darooghe.error_logs'
+VALIDATED_OUTPUT_FILE = 'content/validated_transactions.json'
+VALID_OS = ["iOS", "Android"]
 
 os.makedirs('content', exist_ok=True)
-VALIDATED_OUTPUT_FILE = 'content/validated_transactions.json'
 
 consumer = Consumer({
     'bootstrap.servers': KAFKA_BOOTSTRAP_SERVERS,
     'group.id': 'txn-validator',
     'auto.offset.reset': 'earliest'
 })
-
 consumer.subscribe([INPUT_TOPIC])
-producer = Producer({'bootstrap.servers': KAFKA_BOOTSTRAP_SERVERS})
 
-VALID_OS = ["iOS", "Android"]
+producer = Producer({'bootstrap.servers': KAFKA_BOOTSTRAP_SERVERS})
 
 def convert_and_validate(msg: dict):
     try:
@@ -58,6 +57,7 @@ def convert_and_validate(msg: dict):
             "failure_reason": str(msg['failure_reason']),
         }
         return filtered_msg
+    
     except Exception as e:
         print(f"[❌ Conversion error]: {e}")
         return None
@@ -110,7 +110,6 @@ try:
                         producer.produce(ERROR_TOPIC, key=converted_txn.get("transaction_id"), value=json.dumps(error_event))
                         print(f"🚫 Sent error to {ERROR_TOPIC}: {error_event}")
                 else:
-
                     outfile.write(json.dumps(converted_txn) + "\n")
                     print(f"✅ Valid transaction: {converted_txn['transaction_id']}")
 
@@ -118,7 +117,9 @@ try:
                 print(f"[❌ Deserialization or processing error]: {e}")
 
             producer.flush()
+
 except KeyboardInterrupt:
     print("🛑 Shutting down consumer...")
+
 finally:
     consumer.close()
