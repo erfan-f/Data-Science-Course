@@ -58,14 +58,11 @@ def label_plates():
 
 
 
-import os
-import pandas as pd
 
 def check_unlabeled(plate_dir='content/plates', label_path='ocr_labels.csv'):
-    # Get all plate filenames
+
     all_files = sorted([f for f in os.listdir(plate_dir) if f.endswith('.png')])
 
-    # Load labeled data
     if not os.path.exists(label_path):
         print("⚠️ Label file not found. No labels exist yet.")
         return
@@ -73,7 +70,6 @@ def check_unlabeled(plate_dir='content/plates', label_path='ocr_labels.csv'):
     df = pd.read_csv(label_path)
     labeled_files = set(df['preprocessed_plate'].tolist())
 
-    # Find missing
     missing = [f for f in all_files if f not in labeled_files]
 
     if missing:
@@ -86,3 +82,4 @@ def check_unlabeled(plate_dir='content/plates', label_path='ocr_labels.csv'):
 
 if __name__ == "__main__":
     check_unlabeled()
+    label_plates()
