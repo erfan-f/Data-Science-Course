@@ -2,20 +2,79 @@ import pandas as pd
 import os
 import cv2
 from sklearn.preprocessing import MinMaxScaler
-from database_connection import get_connection , get_cursor
-from load_data import load_joined_data
+from database_connection import get_connection, get_cursor
+from load_data import load_detection_images_joined_data, load_plates_joined_data
 
 
-def preprocess_plate_images(output_folder=os.path.join('content', 'plates'), resize_method='mean', row_limit=None):
+IMAGE_SIZE = 224
+
+def preprocess_detection_images(output_folder, row_limit=None):
+    print("📥 Loading data from database for car preprocessing...")
+    df = load_detection_images_joined_data(row_limit=row_limit)
+
+    print(f"📁 Creating output folder: {output_folder}")
+    os.makedirs(output_folder, exist_ok=True)
+
+    total = len(df)
+    print(f"🔄 Starting detection image preprocessing for {total} entries...")
+    processed = 0
+    skipped = 0
+
+    for idx, row in df.iterrows():
+        img_path = row['image_path']
+        image = cv2.imread(img_path)
+        if image is None:
+            print(f"❌ Skipping unreadable detection image: {img_path}")
+            skipped += 1
+            continue
+
+        image_resized = cv2.resize(image, (IMAGE_SIZE, IMAGE_SIZE))
+        image_name = f'image_{idx:04d}.png'
+        image_path = os.path.join(output_folder, image_name)
+        cv2.imwrite(image_path, image_resized)
+        df.at[idx, 'detection_image'] = image_name
+        df.at[idx, 'image_path'] = image_path
+
+        processed += 1
+        if processed % 50 == 0 or processed == total:
+            print(f"✅ Processed {processed}/{total} detection images...")
+
+    print(f"✅ Finished detection image preprocessing: {processed} processed, {skipped} skipped.")
+
+    print("💾 Updating database with preprocessed detection image filenames...")
+    conn = get_connection()
+    cursor = get_cursor(conn)
+
+    try:
+        cursor.execute("ALTER TABLE engineered_detection_features ADD COLUMN detection_image TEXT;")
+        cursor.execute("ALTER TABLE engineered_detection_features ADD COLUMN image_path TEXT;")
+    except:
+        pass
+
+    for _, row in df.iterrows():
+        if pd.notnull(row['detection_image']):
+            cursor.execute("""
+                UPDATE engineered_detection_features
+                SET detection_image = ?, image_path = ?
+                WHERE filename = ?
+            """, (row['detection_image'], row['image_path'], row['filename']))
+
+    conn.commit()
+    conn.close()
+    print("✅ Plate data update complete.")
+
+    return df
+
+
+def preprocess_plate_images(output_folder, resize_method='mean', row_limit=None):
 
     print("📥 Loading data from database...")
-    df = load_joined_data(row_limit=row_limit)
+    df = load_plates_joined_data(row_limit=row_limit)
 
     print(f"📁 Creating output folder: {output_folder}")
     os.makedirs(output_folder, exist_ok=True)
 
     df['preprocessed_plate'] = None
-    df['preprocessed_folder'] = output_folder
 
     if resize_method == 'mean':
         mean_w = int(df['bbox_width'].mean())
@@ -25,7 +84,7 @@ def preprocess_plate_images(output_folder=os.path.join('content', 'plates'), res
     total = len(df)
     processed = 0
     skipped = 0
-    print(f"🔄 Starting preprocessing of {total} images...")
+    print(f"🚗 Starting preprocessing of {total} license plate images...")
 
     for idx, row in df.iterrows():
         img_path = row['image_path']
@@ -42,42 +101,38 @@ def preprocess_plate_images(output_folder=os.path.join('content', 'plates'), res
         norm = (gray.astype('float32') / 255.0 * 255).astype('uint8')
 
         plate_name = f'plate_{idx:04d}.png'
-        save_path = os.path.join(output_folder, plate_name)
-        cv2.imwrite(save_path, norm)
-
+        plate_save_path = os.path.join(output_folder, plate_name)
+        cv2.imwrite(plate_save_path, norm)
         df.at[idx, 'preprocessed_plate'] = plate_name
+        df.at[idx, 'plate_path'] = plate_save_path
+
         processed += 1
         if processed % 50 == 0 or processed == total:
-            print(f"✅ Processed {processed}/{total} images...")
+            print(f"✅ Processed {processed}/{total} license plate images...")
 
-    print(f"✅ Finished preprocessing. Successfully processed {processed} images, skipped {skipped} unreadable files.")
+    print(f"✅ Finished license plate preprocessing: {processed} processed, {skipped} skipped.")
 
-    print("💾 Updating database with preprocessed file info...")
+    print("💾 Updating database with preprocessed plate filenames...")
     conn = get_connection()
     cursor = get_cursor(conn)
 
     try:
         cursor.execute("ALTER TABLE engineered_plate_features ADD COLUMN preprocessed_plate TEXT;")
-        cursor.execute("ALTER TABLE engineered_plate_features ADD COLUMN preprocessed_folder TEXT;")
+        cursor.execute("ALTER TABLE engineered_plate_features ADD COLUMN plate_path TEXT;")
     except:
         pass
 
     for _, row in df.iterrows():
-        filename = row['filename']
-        plate = row['preprocessed_plate']
-        folder = row['preprocessed_folder']
-
-        if pd.notnull(plate):
+        if pd.notnull(row['preprocessed_plate']):
             cursor.execute("""
                 UPDATE engineered_plate_features
-                SET preprocessed_plate = ?, preprocessed_folder = ?
+                SET preprocessed_plate = ?, plate_path = ?
                 WHERE filename = ?
-            """, (plate, folder, filename))
-
+            """, (row['preprocessed_plate'], row['plate_path'], row['filename']))
 
     conn.commit()
     conn.close()
-    print("✅ Database update complete.")
+    print("✅ Plate data update complete.")
 
     return df
 
@@ -92,6 +147,7 @@ def remove_invalid_annotations():
     conn.commit()
     conn.close()
     print("🗑️ Removed entries with no plate annotation.")
+
 
 def normalize_features():
     conn = get_connection()
@@ -130,6 +186,7 @@ def normalize_features():
     conn.close()
     print("📐 Normalized numeric features.")
 
+
 def drop_redundant_features():
     conn = get_connection()
     df = pd.read_sql_query("SELECT * FROM engineered_plate_features", conn)
@@ -147,7 +204,8 @@ def drop_redundant_features():
     conn.close()
     print(f"❌ Dropped redundant features: {to_drop}")
 
-def detect_blurry_plates(plate_dir='content/plates', threshold=100.0):
+
+def detect_blurry_plates(plate_dir= os.path.join('content', 'plates'), threshold=100.0):
     def is_blurry(image, threshold):
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         lap = cv2.Laplacian(gray, cv2.CV_64F)
@@ -192,10 +250,10 @@ def detect_blurry_plates(plate_dir='content/plates', threshold=100.0):
 
 if __name__ == "__main__":
     print("🚀 Starting full data preprocessing pipeline...")
-    preprocess_plate_images(output_folder='content/plates')
+    preprocess_plate_images(os.path.join('content', 'plates'))
+    preprocess_detection_images(os.path.join('content', 'detection_images'))
     remove_invalid_annotations()
     normalize_features()
     drop_redundant_features()
     detect_blurry_plates()
-
     print("✅ Preprocessing pipeline complete.\n")
