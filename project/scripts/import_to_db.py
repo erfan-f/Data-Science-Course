@@ -10,8 +10,6 @@ df = pd.read_excel(excel_path)
 df['image_path'] = df['filename'].apply(lambda x: os.path.join('content', 'images', x))
 
 
-
-
 db_path = os.path.join('database', 'dataset.db')
 
 conn = sqlite3.connect(db_path)

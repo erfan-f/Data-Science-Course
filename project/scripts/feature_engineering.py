@@ -1,7 +1,10 @@
 from load_data import load_annotations
-from database_connection import get_connection, get_cursor
+from database_connection import get_connection
+import os
 
-def create_advanced_features(df):
+IMAGE_SIZE = 224
+
+def create_plates_advanced_features(df):
 
     df['bbox_width']  = df['xmax'] - df['xmin']
     df['bbox_height'] = df['ymax'] - df['ymin']
@@ -21,7 +24,16 @@ def create_advanced_features(df):
 
     return df
 
-def save_features_to_db(df):
+def create_detection_image_features(df):
+
+    df['xmin'] = df['xmin'] / (df['width'] / IMAGE_SIZE)
+    df['xmax'] = df['xmax'] / (df['width'] / IMAGE_SIZE)
+    df['ymin'] = df['ymin'] / (df['height'] / IMAGE_SIZE)
+    df['ymax'] = df['ymax'] / (df['height'] / IMAGE_SIZE)
+
+    return df
+
+def save_plates_features_to_db(df):
 
     conn = get_connection()
 
@@ -39,20 +51,43 @@ def save_features_to_db(df):
     print("✅ Engineered features saved to 'engineered_plate_features' in the database.")
 
 
-def save_to_csv(df, filename='content/engineered_features.csv'):
+def save_detection_features_to_db(df):
+    conn = get_connection()
+
+
+    df[['filename', 'xmin', 'xmax', 'ymin', 'ymax']].to_sql(
+        name='engineered_detection_features',
+        con=conn,
+        if_exists='replace',
+        index=False
+    )
+
+    conn.commit()
+    conn.close()
+    print("✅ Full image features saved to 'engineered_detection_features' in the database.")
+
+
+
+def save_to_csv(df, filename):
     df.to_csv(filename, index=False)
     print(f"✅ Data saved to {filename}")
+
 
 def feature_engineering_pipeline(row_limit=None):
     print("📥 Loading data...")
     df = load_annotations(row_limit=row_limit)
 
-    print("🔧 Creating advanced features...")
-    df = create_advanced_features(df)
+    print("🔧 Creating detection features...")
+    image_df = create_detection_image_features(df)
+    save_detection_features_to_db(image_df)
+    save_to_csv(image_df, os.path.join('content', 'detection_features.csv'))
 
-    save_features_to_db(df)
+    print("🔧 Creating plates advanced features...")
+    palte_df = create_plates_advanced_features(df)
+    save_plates_features_to_db(palte_df)
+    save_to_csv(palte_df, os.path.join('content', 'plates_engineered_features.csv'))
+    
 
-    save_to_csv(df, 'content/engineered_features.csv')
 
 if __name__ == "__main__":
     print("🚀 Starting feature engineering pipeline...")
