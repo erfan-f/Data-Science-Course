@@ -4,6 +4,7 @@ import cv2
 from sklearn.preprocessing import MinMaxScaler
 from database_connection import get_connection, get_cursor
 from load_data import load_detection_images_joined_data, load_plates_joined_data
+import matplotlib.pyplot as plt
 
 IMAGE_SIZE = 224
 
@@ -68,7 +69,7 @@ def preprocess_plate_images(output_folder, resize_method='mean', row_limit=None)
         mean_w = int(df['bbox_width'].mean())
         mean_h = int(df['bbox_height'].mean())
         target_size = (mean_w, mean_h)
-
+        print(f"picture target size is:({mean_w},{mean_h}) ")
     processed, skipped = 0, 0
     print(f"🚗 Starting license plate preprocessing ({len(df)} total)...")
 
@@ -88,6 +89,10 @@ def preprocess_plate_images(output_folder, resize_method='mean', row_limit=None)
 
         plate_name = f'plate_{idx:04d}.png'
         plate_path = os.path.join(output_folder, plate_name)
+        # plt.imshow(norm)
+        # plt.axis("off")
+        # plt.show()
+
         cv2.imwrite(plate_path, norm)
 
         df.at[idx, 'preprocessed_plate'] = plate_name

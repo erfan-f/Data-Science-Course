@@ -1,0 +1,102 @@
+preprocessed_plate,ocr_text,easyocr_text,easyocr_conf,tesseract_text,easyocr_exact,easyocr_norm,easyocr_lev,tesseract_exact,tesseract_norm,tesseract_lev
+plate_0000.png,KLG1CA2555,MLMbuse,0.0117765319315745,[NO TEXT],False,False,9,False,False,10
+plate_0001.png,PGoMN112,pg WHLLZ,0.2361523674300482,[NO TEXT],False,False,6,False,False,7
+plate_0004.png,HR 26 BC 55I4,HR 25 DC 554],0.1201611007041412,[NO TEXT],False,False,4,False,False,9
+plate_0005.png,6861136,AWHP,0.0056281201541423,[NO TEXT],False,False,7,False,False,8
+plate_0010.png,NL60LXB,Egol,0.0568238906562328,[NO TEXT],False,False,5,False,False,7
+plate_0011.png,SBA1234A,5042h41,0.0438176862602611,[NO TEXT],False,False,6,False,False,8
+plate_0028.png,MH 20 BQ 20,RHEDAz 20,0.0367560042792584,[NO TEXT],False,False,5,False,False,8
+plate_0029.png,MHO 1 AV8866,MHJYAbE ;6,0.0504249344025939,[NO TEXT],False,False,6,False,False,9
+plate_0030.png,CZ17 KOD,LZHP Kh ,0.112413849271745,[NO TEXT],False,False,5,False,False,8
+plate_0031.png,WOR 516K,HUR E,0.0514850956326761,[NO TEXT],False,False,6,False,False,7
+plate_0032.png,F1,FI,0.1631324119682011,[NO TEXT],False,True,0,False,False,7
+plate_0033.png,MH 20 EE 7598,MHJUEE V548,0.1197029048857022,[NO TEXT],False,False,4,False,False,8
+plate_0034.png,SHAKNBK,SHANNBA,0.173395443522757,[NO TEXT],False,False,2,False,False,8
+plate_0035.png,MPEACHW,MPEACHA,0.3527070760404489,[NO TEXT],False,False,1,False,False,8
+plate_0037.png,M666 YOB,M6gg YOE ,0.0814443528273868,[NO TEXT],False,False,3,False,False,8
+plate_0038.png,MK-35-32,NK 95*32,0.1478563693876532,[NO TEXT],False,False,4,False,False,8
+plate_0040.png,JA62 UAR,Jagzua?,0.5350064415430158,[NO TEXT],False,False,6,False,False,8
+plate_0042.png,MH12BG7237,"""WIpU6LU",0.0102728274882677,[NO TEXT],False,False,9,False,False,10
+plate_0043.png,B 2228HM,F2284,0.0464899099839375,[NO TEXT],False,False,4,False,False,8
+plate_0045.png,MANISA,MANSN,0.4704103660009065,[NO TEXT],False,False,2,False,False,8
+plate_0046.png,HR 26 BC 5514,AREG Ec 5314,0.1014779184725759,[NO TEXT],False,False,6,False,False,9
+plate_0049.png,KA G5MG1909,KadsoLd,0.0074826045165501,[NO TEXT],False,False,8,False,False,10
+plate_0051.png,OX65 AWD,[ox65[,0.0210038609752404,[NO TEXT],False,False,5,False,False,8
+plate_0052.png,OPEC LOL,OPEC L OL,0.4824304425091517,[NO TEXT],False,True,0,False,False,6
+plate_0053.png,BJR216,url6,0.0723970755934715,[NO TEXT],False,False,4,False,False,8
+plate_0054.png,HR 26 BR 9044,Kr 36 6Rb04,0.0024500517120754,[NO TEXT],False,False,6,False,False,10
+plate_0060.png,1268,11260,0.2979489356597565,[NO TEXT],False,False,2,False,False,8
+plate_0061.png,LI9 TLC,ml,0.3404426581465354,[NO TEXT],False,False,5,False,False,7
+plate_0063.png,15474,KMU,0.0506321565306595,[NO TEXT],False,False,5,False,False,8
+plate_0070.png,ALR 486,MLR4B6,0.132755929352868,[NO TEXT],False,False,2,False,False,8
+plate_0071.png,CH01AN0001,CIuEd,0.0080414688972304,[NO TEXT],False,False,8,False,False,8
+plate_0077.png,FU3346,IZIOIT,0.1651456391185784,[NO TEXT],False,False,6,False,False,8
+plate_0077.png,nan,IZIOIT,0.1651456391185784,[NO TEXT],False,False,6,False,False,8
+plate_0078.png,PEN15,FEHIs,0.1107251543833552,[NO TEXT],False,False,3,False,False,7
+plate_0079.png,CH01AN0001,CDKID,0.0658774283789106,[NO TEXT],False,False,8,False,False,8
+plate_0097.png,MH01BB550,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
+plate_0098.png,7VI6263,ONIGZ6,0.369598723237618,[NO TEXT],False,False,5,False,False,8
+plate_0099.png,TN21BY0166,Hua,0.0843297764658927,[NO TEXT],False,False,10,False,False,8
+plate_0100.png,DL8CX 4850,'LJGX 43),0.0757396788796894,[NO TEXT],False,False,6,False,False,9
+plate_0101.png,DL3CBD5092,[NO TEXT],0.0,[NO TEXT],False,False,10,False,False,10
+plate_0102.png,DL49 AK49,DLP Arp,0.2204708220440425,[NO TEXT],False,False,5,False,False,8
+plate_0103.png,MH 20BQ20,4hejentn,0.0193644331230368,[NO TEXT],False,False,8,False,False,8
+plate_0104.png,2662,2062,0.7825059294700623,[NO TEXT],False,False,1,False,False,8
+plate_0105.png,MCB025,MLb',0.7013436555862427,[NO TEXT],False,False,5,False,False,8
+plate_0106.png,PRIV ATE,F,0.0622232943572989,[NO TEXT],False,False,7,False,False,7
+plate_0107.png,PYB557K,"tbS57,",0.018981535044912,[NO TEXT],False,False,5,False,False,8
+plate_0108.png,695299,695299,0.9190094292302686,[NO TEXT],True,True,0,False,False,8
+plate_0109.png,DL7CN5617,ELEHESP,0.081184395861492,[NO TEXT],False,False,8,False,False,8
+plate_0111.png,OO7PLATE.COM,"WIIEc""",0.0718749623987323,[NO TEXT],False,False,10,False,False,10
+plate_0112.png,M666 YOB,0ege VOb,0.0800644804680719,[NO TEXT],False,False,6,False,False,8
+plate_0114.png,LR33 TEE,UFO? IE,0.0079771709278026,[NO TEXT],False,False,6,False,False,7
+plate_0115.png,GT,[NO TEXT],0.0,[NO TEXT],False,False,7,False,False,7
+plate_0116.png,TN21AU 1153,Iuild,0.0779484121759501,[NO TEXT],False,False,8,False,False,8
+plate_0117.png,IM A CAR,Linagar,0.1016809696745503,[NO TEXT],False,False,6,False,False,8
+plate_0118.png,15-LK-10898,Nsuh00,0.0120449406104258,[NO TEXT],False,False,10,False,False,11
+plate_0120.png,PRIV ATE,PRHAYE,0.1652430276874908,[NO TEXT],False,False,3,False,False,7
+plate_0121.png,YSX 213,YSK213,0.3263423037948012,[NO TEXT],False,False,1,False,False,7
+plate_0122.png,983,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
+plate_0123.png,BJR216,70U2I6,0.0472496172619749,[NO TEXT],False,False,3,False,False,8
+plate_0125.png,WMY-9051,[NO TEXT],0.0,[NO TEXT],False,False,7,False,False,7
+plate_0130.png,DL!N4268,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
+plate_0133.png,522 92Z,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
+plate_0134.png,4SZW590,Lszw590 ,0.2090102458718174,[NO TEXT],False,False,4,False,False,8
+plate_0135.png,M666YOB,NGEe KOs,0.0204442638431603,[NO TEXT],False,False,6,False,False,8
+plate_0136.png,MPEACHW,Mpeach,0.1904943633293436,[NO TEXT],False,False,6,False,False,8
+plate_0137.png,JHIIHAD,MH,0.717339958064912,[NO TEXT],False,False,6,False,False,8
+plate_0138.png,VI2LAF,VIz LaF,0.3516280997100084,[NO TEXT],False,False,2,False,False,8
+plate_0139.png,BRIT 0001,BRI OU ,0.6068833507863063,[NO TEXT],False,False,4,False,False,6
+plate_0140.png,SWIFT,Jwift,0.4217825159923473,[NO TEXT],False,False,5,False,False,7
+plate_0142.png,26-SPF-4,Uzo SPF-4,0.052106358671016,[NO TEXT],False,False,3,False,False,8
+plate_0143.png,ALR 486,HLRAB,0.0418203749141101,[NO TEXT],False,False,4,False,False,8
+plate_0145.png,CH01AN0001,ChDuIwd,0.0283815406755174,[NO TEXT],False,False,9,False,False,8
+plate_0146.png,AFR.2011,AFR:2011,0.9486907240786084,[NO TEXT],False,False,1,False,False,7
+plate_0147.png,KL54A2670,8L;411670,0.2009419863091873,[NO TEXT],False,False,4,False,False,9
+plate_0148.png,KA03AB3380,UU,0.0151418897729207,[NO TEXT],False,False,10,False,False,9
+plate_0149.png,E4 GLE,IFAGL,0.4443121027313155,[NO TEXT],False,False,4,False,False,7
+plate_0152.png,Ciaz,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
+plate_0154.png,LR33TEE,HRSaIEE,0.0441706953929245,[NO TEXT],False,False,4,False,False,7
+plate_0155.png,MH01AV8866,IIVOUAE,0.0407474904398528,[NO TEXT],False,False,8,False,False,9
+plate_0156.png,MHO1AE8017,"""HHWHAWI",0.0524598840052567,[NO TEXT],False,False,8,False,False,7
+plate_0159.png,KA03AB3380,#om,0.0319019637288957,[NO TEXT],False,False,9,False,False,9
+plate_0160.png,LR33 TEE,[LEMIIEE,0.0401646215481238,[NO TEXT],False,False,5,False,False,7
+plate_0161.png,KWID,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
+plate_0162.png,CZ17 KOD,Czi2 Kdp,0.1026498229014962,[NO TEXT],False,False,5,False,False,8
+plate_0164.png,NOTACOP,Notacop],0.8476837057403315,[NO TEXT],False,False,5,False,False,5
+plate_0165.png,HR 26 BU 0380,HRMQuG;,0.0076266847285361,[NO TEXT],False,False,8,False,False,10
+plate_0166.png,K817GR,NYeR ,0.0197157685183224,[NO TEXT],False,False,5,False,False,8
+plate_0167.png,V-8,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
+plate_0169.png,!RQ,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
+plate_0170.png,MHO1AE8017,"""HHMEMOR",0.023720269945644,[NO TEXT],False,False,7,False,False,7
+plate_0171.png,F 65022,65022,0.9995634699735731,[NO TEXT],False,False,1,False,False,8
+plate_0172.png,KL 65 H 4383,4EE |4EE:,0.0320979513093736,[NO TEXT],False,False,8,False,False,9
+plate_0175.png,CH 9984,Uch B,0.0889713658369241,[NO TEXT],False,False,6,False,False,8
+plate_0176.png,OPEC LOL,OPEC Loi,0.4294199355365456,[NO TEXT],False,False,1,False,False,6
+plate_0177.png,AFR-2011,AFR:2011|,0.2593264747206457,[NO TEXT],False,False,2,False,False,7
+plate_0178.png,25Z5,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
+plate_0179.png,KA03 MG 2784,IHKH,0.0446543060243129,[NO TEXT],False,False,10,False,False,9
+plate_0180.png,YAMRAJ,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
+plate_0181.png,PG55585,gssi5.,0.1022073585531493,[NO TEXT],False,False,6,False,False,8
+plate_0183.png,26-SPF-4,4720 SPF4,0.1110530789632645,[NO TEXT],False,False,5,False,False,8
+plate_0184.png,VHB-431,MbZeJL,0.0274628802958797,[NO TEXT],False,False,6,False,False,7
