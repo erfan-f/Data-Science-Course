@@ -1,6 +1,8 @@
 import pandas as pd
 import os
 import cv2
+import mlflow
+import mlflow.pytorch
 from sklearn.preprocessing import MinMaxScaler
 from database_connection import get_connection, get_cursor
 from load_data import load_detection_images_joined_data, load_plates_joined_data
@@ -13,11 +15,19 @@ def preprocess_detection_images(output_folder, row_limit=None):
 
     os.makedirs(output_folder, exist_ok=True)
 
-    print(f"🔄 Starting detection image preprocessing ({len(df)} total)...")
+    print(f"🔄 Starting detection image preprocessing ({len(df['filename'].unique())} total)...")
     processed, skipped = 0, 0
+
+    seen_filenames = set()
 
     for idx, row in df.iterrows():
         img_path = row['image_path']
+        filename = row['filename']
+
+        if filename in seen_filenames:
+            continue  
+        seen_filenames.add(filename)
+
         image = cv2.imread(img_path)
         if image is None:
             print(f"❌ Could not read: {img_path}")
@@ -25,11 +35,11 @@ def preprocess_detection_images(output_folder, row_limit=None):
             continue
 
         resized = cv2.resize(image, (IMAGE_SIZE, IMAGE_SIZE))
-        filename = f'image_{idx:04d}.png'
-        save_path = os.path.join(output_folder, filename)
+        out_filename = f"{filename}" 
+        save_path = os.path.join(output_folder, out_filename)
 
         cv2.imwrite(save_path, resized)
-        df.at[idx, 'detection_image'] = filename
+
         df.at[idx, 'image_path'] = save_path
         processed += 1
 
@@ -40,23 +50,23 @@ def preprocess_detection_images(output_folder, row_limit=None):
     cursor = get_cursor(conn)
 
     try:
-        cursor.execute("ALTER TABLE engineered_detection_features ADD COLUMN detection_image TEXT;")
         cursor.execute("ALTER TABLE engineered_detection_features ADD COLUMN image_path TEXT;")
     except:
         pass
 
     for _, row in df.iterrows():
-        if pd.notnull(row['detection_image']):
+        if pd.notnull(row['filename']):
             cursor.execute("""
                 UPDATE engineered_detection_features
-                SET detection_image = ?, image_path = ?
+                SET image_path = ?
                 WHERE filename = ?
-            """, (row['detection_image'], row['image_path'], row['filename']))
+            """, (row['image_path'], row['filename']))
 
     conn.commit()
     conn.close()
     print("✅ Detection image metadata saved.\n")
     return df
+
 
 def preprocess_plate_images(output_folder, resize_method='mean', row_limit=None):
     print("📥 Loading plate data from database...")
@@ -221,10 +231,34 @@ def detect_blurry_plates(plate_dir=os.path.join('content', 'plates'), threshold=
 
 if __name__ == "__main__":
     print("🚀 Starting full preprocessing pipeline...\n")
-    preprocess_plate_images(os.path.join('content', 'plates'))
-    preprocess_detection_images(os.path.join('content', 'detection_images'))
-    remove_invalid_annotations()
-    normalize_features()
-    drop_redundant_features()
-    detect_blurry_plates()
+
+    mlflow.set_experiment("preprocessing_pipeline")
+    with mlflow.start_run(run_name="preprocess_v1"):
+        plate_output_dir = os.path.join('content', 'plates')
+        detection_output_dir = os.path.join('content', 'detection_images')
+        blur_threshold = 100.0
+        resize_method = 'mean'
+
+        mlflow.log_param("resize_method", resize_method)
+        mlflow.log_param("blur_threshold", blur_threshold)
+
+        plate_df = preprocess_plate_images(plate_output_dir, resize_method=resize_method)
+        mlflow.log_metric("plates_processed", len(plate_df))
+
+        detection_df = preprocess_detection_images(detection_output_dir)
+        mlflow.log_metric("detections_processed", len(detection_df))
+
+        remove_invalid_annotations()
+        normalize_features()
+        drop_redundant_features()
+        
+        detect_blurry_plates(plate_output_dir, threshold=blur_threshold)
+
+        final_df = pd.read_sql("SELECT * FROM engineered_plate_features", get_connection())
+        final_path = os.path.join("content", "final_plate_metadata.csv")
+        final_df.to_csv(final_path, index=False)
+        mlflow.log_artifact(final_path)
+
+        mlflow.log_text(final_df.head().to_string(), "plate_metadata_preview.txt")
+
     print("✅ All preprocessing complete.")
