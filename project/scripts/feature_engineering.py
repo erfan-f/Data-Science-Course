@@ -1,7 +1,8 @@
 from load_data import load_annotations
 from database_connection import get_connection
 import os
-import pandas as pd
+import mlflow
+
 
 IMAGE_SIZE = 224
 
@@ -68,18 +69,35 @@ def save_to_csv(df, filename):
     print(f"✅ Data saved to {filename}")
 
 def feature_engineering_pipeline(row_limit=None):
-    print("📥 Loading annotation data...")
-    df = load_annotations(row_limit=row_limit)
+    mlflow.set_experiment("feature_engineering")
+    
+    with mlflow.start_run(run_name="plate_feature_engineering"):
+        print("📥 Loading annotation data...")
+        df = load_annotations(row_limit=row_limit)
 
-    print("🔧 Creating detection features...")
-    detection_df = create_detection_image_features(df)
-    save_detection_features_to_db(detection_df)
-    save_to_csv(detection_df, os.path.join('content', 'detection_features.csv'))
+        mlflow.log_param("row_limit", row_limit if row_limit else "all")
+        mlflow.log_metric("raw_rows", len(df))
 
-    print("🔧 Creating advanced plate features...")
-    plate_df = create_plates_advanced_features(df)
-    save_plates_features_to_db(plate_df)
-    save_to_csv(plate_df, os.path.join('content', 'plates_engineered_features.csv'))
+        print("🔧 Creating detection features...")
+        detection_df = create_detection_image_features(df)
+        save_detection_features_to_db(detection_df)
+        detection_path = os.path.join('content', 'detection_features.csv')
+        save_to_csv(detection_df, detection_path)
+
+        mlflow.log_metric("detection_rows", len(detection_df))
+        mlflow.log_artifact(detection_path)
+
+        print("🔧 Creating advanced plate features...")
+        plate_df = create_plates_advanced_features(df)
+        save_plates_features_to_db(plate_df)
+        plate_path = os.path.join('content', 'engineered_plate_features.csv')
+        save_to_csv(plate_df, plate_path)
+
+        mlflow.log_metric("plate_rows", len(plate_df))
+        mlflow.log_artifact(plate_path)
+
+        mlflow.log_text(plate_df.head().to_string(), "sample_plate_features.txt")
+
 
 if __name__ == "__main__":
     print("🚀 Starting feature engineering pipeline...")

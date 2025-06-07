@@ -20,14 +20,31 @@ def load_plate_features(row_limit=None):
     conn.close()
     return df
 
-def load_detection_image_features(row_limit=None):
+def load_detection_image_features(mode="train", row_limit=None):
     conn = get_connection()
-    query = "SELECT * FROM engineered_detection_features"
+
+    if mode == "train":
+        query = """
+            SELECT * FROM engineered_detection_features
+            WHERE xmin IS NOT NULL AND ymin IS NOT NULL
+              AND xmax IS NOT NULL AND ymax IS NOT NULL
+        """
+    elif mode == "predict":
+        query = """
+            SELECT * FROM engineered_detection_features
+            WHERE xmin IS NULL OR ymin IS NULL
+               OR xmax IS NULL OR ymax IS NULL
+        """
+    else:
+        raise ValueError("mode must be 'train' or 'predict'")
+
     if row_limit:
         query += f" LIMIT {row_limit}"
+    
     df = pd.read_sql_query(query, conn)
     conn.close()
     return df
+
 
 def load_plates_joined_data(row_limit=None):
     conn = get_connection()

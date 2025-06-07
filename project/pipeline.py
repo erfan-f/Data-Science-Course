@@ -15,9 +15,11 @@ if __name__ == "__main__":
     scripts = [
         os.path.join('scripts', 'import_to_db.py'),
         os.path.join('scripts', 'feature_engineering.py'),
-        os.path.join('scripts', 'preprocess.py')
+        # os.path.join('scripts', 'preprocess.py'),
+        os.path.join('scripts', 'run_detection_model.py'),
     ]
     for script in scripts:
         run_script(script)
+
 
     print("\n✅ Pipeline execution complete.")
