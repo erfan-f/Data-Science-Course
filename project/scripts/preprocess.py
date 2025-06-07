@@ -78,6 +78,8 @@ def preprocess_plate_images(output_folder, resize_method='mean', row_limit=None)
     if resize_method == 'mean':
         mean_w = int(df['bbox_width'].mean())
         mean_h = int(df['bbox_height'].mean())
+        print(df['bbox_height'])
+        print(df['bbox_width'])
         target_size = (mean_w, mean_h)
         print(f"picture target size is:({mean_w},{mean_h}) ")
     processed, skipped = 0, 0
