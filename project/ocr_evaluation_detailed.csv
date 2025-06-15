@@ -1,102 +1,374 @@
-preprocessed_plate,ocr_text,easyocr_text,easyocr_conf,tesseract_text,easyocr_exact,easyocr_norm,easyocr_lev,tesseract_exact,tesseract_norm,tesseract_lev
-plate_0000.png,KLG1CA2555,MLMbuse,0.0117765319315745,[NO TEXT],False,False,9,False,False,10
-plate_0001.png,PGoMN112,pg WHLLZ,0.2361523674300482,[NO TEXT],False,False,6,False,False,7
-plate_0004.png,HR 26 BC 55I4,HR 25 DC 554],0.1201611007041412,[NO TEXT],False,False,4,False,False,9
-plate_0005.png,6861136,AWHP,0.0056281201541423,[NO TEXT],False,False,7,False,False,8
-plate_0010.png,NL60LXB,Egol,0.0568238906562328,[NO TEXT],False,False,5,False,False,7
-plate_0011.png,SBA1234A,5042h41,0.0438176862602611,[NO TEXT],False,False,6,False,False,8
-plate_0028.png,MH 20 BQ 20,RHEDAz 20,0.0367560042792584,[NO TEXT],False,False,5,False,False,8
-plate_0029.png,MHO 1 AV8866,MHJYAbE ;6,0.0504249344025939,[NO TEXT],False,False,6,False,False,9
-plate_0030.png,CZ17 KOD,LZHP Kh ,0.112413849271745,[NO TEXT],False,False,5,False,False,8
-plate_0031.png,WOR 516K,HUR E,0.0514850956326761,[NO TEXT],False,False,6,False,False,7
-plate_0032.png,F1,FI,0.1631324119682011,[NO TEXT],False,True,0,False,False,7
-plate_0033.png,MH 20 EE 7598,MHJUEE V548,0.1197029048857022,[NO TEXT],False,False,4,False,False,8
-plate_0034.png,SHAKNBK,SHANNBA,0.173395443522757,[NO TEXT],False,False,2,False,False,8
-plate_0035.png,MPEACHW,MPEACHA,0.3527070760404489,[NO TEXT],False,False,1,False,False,8
-plate_0037.png,M666 YOB,M6gg YOE ,0.0814443528273868,[NO TEXT],False,False,3,False,False,8
-plate_0038.png,MK-35-32,NK 95*32,0.1478563693876532,[NO TEXT],False,False,4,False,False,8
-plate_0040.png,JA62 UAR,Jagzua?,0.5350064415430158,[NO TEXT],False,False,6,False,False,8
-plate_0042.png,MH12BG7237,"""WIpU6LU",0.0102728274882677,[NO TEXT],False,False,9,False,False,10
-plate_0043.png,B 2228HM,F2284,0.0464899099839375,[NO TEXT],False,False,4,False,False,8
-plate_0045.png,MANISA,MANSN,0.4704103660009065,[NO TEXT],False,False,2,False,False,8
-plate_0046.png,HR 26 BC 5514,AREG Ec 5314,0.1014779184725759,[NO TEXT],False,False,6,False,False,9
-plate_0049.png,KA G5MG1909,KadsoLd,0.0074826045165501,[NO TEXT],False,False,8,False,False,10
-plate_0051.png,OX65 AWD,[ox65[,0.0210038609752404,[NO TEXT],False,False,5,False,False,8
-plate_0052.png,OPEC LOL,OPEC L OL,0.4824304425091517,[NO TEXT],False,True,0,False,False,6
-plate_0053.png,BJR216,url6,0.0723970755934715,[NO TEXT],False,False,4,False,False,8
-plate_0054.png,HR 26 BR 9044,Kr 36 6Rb04,0.0024500517120754,[NO TEXT],False,False,6,False,False,10
-plate_0060.png,1268,11260,0.2979489356597565,[NO TEXT],False,False,2,False,False,8
-plate_0061.png,LI9 TLC,ml,0.3404426581465354,[NO TEXT],False,False,5,False,False,7
-plate_0063.png,15474,KMU,0.0506321565306595,[NO TEXT],False,False,5,False,False,8
-plate_0070.png,ALR 486,MLR4B6,0.132755929352868,[NO TEXT],False,False,2,False,False,8
-plate_0071.png,CH01AN0001,CIuEd,0.0080414688972304,[NO TEXT],False,False,8,False,False,8
-plate_0077.png,FU3346,IZIOIT,0.1651456391185784,[NO TEXT],False,False,6,False,False,8
-plate_0077.png,nan,IZIOIT,0.1651456391185784,[NO TEXT],False,False,6,False,False,8
-plate_0078.png,PEN15,FEHIs,0.1107251543833552,[NO TEXT],False,False,3,False,False,7
-plate_0079.png,CH01AN0001,CDKID,0.0658774283789106,[NO TEXT],False,False,8,False,False,8
-plate_0097.png,MH01BB550,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
-plate_0098.png,7VI6263,ONIGZ6,0.369598723237618,[NO TEXT],False,False,5,False,False,8
-plate_0099.png,TN21BY0166,Hua,0.0843297764658927,[NO TEXT],False,False,10,False,False,8
-plate_0100.png,DL8CX 4850,'LJGX 43),0.0757396788796894,[NO TEXT],False,False,6,False,False,9
-plate_0101.png,DL3CBD5092,[NO TEXT],0.0,[NO TEXT],False,False,10,False,False,10
-plate_0102.png,DL49 AK49,DLP Arp,0.2204708220440425,[NO TEXT],False,False,5,False,False,8
-plate_0103.png,MH 20BQ20,4hejentn,0.0193644331230368,[NO TEXT],False,False,8,False,False,8
-plate_0104.png,2662,2062,0.7825059294700623,[NO TEXT],False,False,1,False,False,8
-plate_0105.png,MCB025,MLb',0.7013436555862427,[NO TEXT],False,False,5,False,False,8
-plate_0106.png,PRIV ATE,F,0.0622232943572989,[NO TEXT],False,False,7,False,False,7
-plate_0107.png,PYB557K,"tbS57,",0.018981535044912,[NO TEXT],False,False,5,False,False,8
-plate_0108.png,695299,695299,0.9190094292302686,[NO TEXT],True,True,0,False,False,8
-plate_0109.png,DL7CN5617,ELEHESP,0.081184395861492,[NO TEXT],False,False,8,False,False,8
-plate_0111.png,OO7PLATE.COM,"WIIEc""",0.0718749623987323,[NO TEXT],False,False,10,False,False,10
-plate_0112.png,M666 YOB,0ege VOb,0.0800644804680719,[NO TEXT],False,False,6,False,False,8
-plate_0114.png,LR33 TEE,UFO? IE,0.0079771709278026,[NO TEXT],False,False,6,False,False,7
-plate_0115.png,GT,[NO TEXT],0.0,[NO TEXT],False,False,7,False,False,7
-plate_0116.png,TN21AU 1153,Iuild,0.0779484121759501,[NO TEXT],False,False,8,False,False,8
-plate_0117.png,IM A CAR,Linagar,0.1016809696745503,[NO TEXT],False,False,6,False,False,8
-plate_0118.png,15-LK-10898,Nsuh00,0.0120449406104258,[NO TEXT],False,False,10,False,False,11
-plate_0120.png,PRIV ATE,PRHAYE,0.1652430276874908,[NO TEXT],False,False,3,False,False,7
-plate_0121.png,YSX 213,YSK213,0.3263423037948012,[NO TEXT],False,False,1,False,False,7
-plate_0122.png,983,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
-plate_0123.png,BJR216,70U2I6,0.0472496172619749,[NO TEXT],False,False,3,False,False,8
-plate_0125.png,WMY-9051,[NO TEXT],0.0,[NO TEXT],False,False,7,False,False,7
-plate_0130.png,DL!N4268,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
-plate_0133.png,522 92Z,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
-plate_0134.png,4SZW590,Lszw590 ,0.2090102458718174,[NO TEXT],False,False,4,False,False,8
-plate_0135.png,M666YOB,NGEe KOs,0.0204442638431603,[NO TEXT],False,False,6,False,False,8
-plate_0136.png,MPEACHW,Mpeach,0.1904943633293436,[NO TEXT],False,False,6,False,False,8
-plate_0137.png,JHIIHAD,MH,0.717339958064912,[NO TEXT],False,False,6,False,False,8
-plate_0138.png,VI2LAF,VIz LaF,0.3516280997100084,[NO TEXT],False,False,2,False,False,8
-plate_0139.png,BRIT 0001,BRI OU ,0.6068833507863063,[NO TEXT],False,False,4,False,False,6
-plate_0140.png,SWIFT,Jwift,0.4217825159923473,[NO TEXT],False,False,5,False,False,7
-plate_0142.png,26-SPF-4,Uzo SPF-4,0.052106358671016,[NO TEXT],False,False,3,False,False,8
-plate_0143.png,ALR 486,HLRAB,0.0418203749141101,[NO TEXT],False,False,4,False,False,8
-plate_0145.png,CH01AN0001,ChDuIwd,0.0283815406755174,[NO TEXT],False,False,9,False,False,8
-plate_0146.png,AFR.2011,AFR:2011,0.9486907240786084,[NO TEXT],False,False,1,False,False,7
-plate_0147.png,KL54A2670,8L;411670,0.2009419863091873,[NO TEXT],False,False,4,False,False,9
-plate_0148.png,KA03AB3380,UU,0.0151418897729207,[NO TEXT],False,False,10,False,False,9
-plate_0149.png,E4 GLE,IFAGL,0.4443121027313155,[NO TEXT],False,False,4,False,False,7
-plate_0152.png,Ciaz,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
-plate_0154.png,LR33TEE,HRSaIEE,0.0441706953929245,[NO TEXT],False,False,4,False,False,7
-plate_0155.png,MH01AV8866,IIVOUAE,0.0407474904398528,[NO TEXT],False,False,8,False,False,9
-plate_0156.png,MHO1AE8017,"""HHWHAWI",0.0524598840052567,[NO TEXT],False,False,8,False,False,7
-plate_0159.png,KA03AB3380,#om,0.0319019637288957,[NO TEXT],False,False,9,False,False,9
-plate_0160.png,LR33 TEE,[LEMIIEE,0.0401646215481238,[NO TEXT],False,False,5,False,False,7
-plate_0161.png,KWID,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
-plate_0162.png,CZ17 KOD,Czi2 Kdp,0.1026498229014962,[NO TEXT],False,False,5,False,False,8
-plate_0164.png,NOTACOP,Notacop],0.8476837057403315,[NO TEXT],False,False,5,False,False,5
-plate_0165.png,HR 26 BU 0380,HRMQuG;,0.0076266847285361,[NO TEXT],False,False,8,False,False,10
-plate_0166.png,K817GR,NYeR ,0.0197157685183224,[NO TEXT],False,False,5,False,False,8
-plate_0167.png,V-8,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
-plate_0169.png,!RQ,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
-plate_0170.png,MHO1AE8017,"""HHMEMOR",0.023720269945644,[NO TEXT],False,False,7,False,False,7
-plate_0171.png,F 65022,65022,0.9995634699735731,[NO TEXT],False,False,1,False,False,8
-plate_0172.png,KL 65 H 4383,4EE |4EE:,0.0320979513093736,[NO TEXT],False,False,8,False,False,9
-plate_0175.png,CH 9984,Uch B,0.0889713658369241,[NO TEXT],False,False,6,False,False,8
-plate_0176.png,OPEC LOL,OPEC Loi,0.4294199355365456,[NO TEXT],False,False,1,False,False,6
-plate_0177.png,AFR-2011,AFR:2011|,0.2593264747206457,[NO TEXT],False,False,2,False,False,7
-plate_0178.png,25Z5,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
-plate_0179.png,KA03 MG 2784,IHKH,0.0446543060243129,[NO TEXT],False,False,10,False,False,9
-plate_0180.png,YAMRAJ,[NO TEXT],0.0,[NO TEXT],False,False,8,False,False,8
-plate_0181.png,PG55585,gssi5.,0.1022073585531493,[NO TEXT],False,False,6,False,False,8
-plate_0183.png,26-SPF-4,4720 SPF4,0.1110530789632645,[NO TEXT],False,False,5,False,False,8
-plate_0184.png,VHB-431,MbZeJL,0.0274628802958797,[NO TEXT],False,False,6,False,False,7
+preprocessed_plate,plate_path,ocr_text,easyocr_text,trocr_text,easyocr_exact,easyocr_norm,easyocr_lev,easyocr_lev_ratio,easyocr_char_acc,trocr_exact,trocr_norm,trocr_lev,trocr_lev_ratio,trocr_char_acc,correct_label,wrong_label
+plate_0000.png,content\plates\plate_0000.png,KLG1CA2555,KLCACA2555,KLO1CA2555,False,False,2,0.8,0.8,False,False,1,0.9,0.9,KLG1CA2555,KLCACA2555
+plate_0001.png,content\plates\plate_0001.png,PGoMN112,PGoMN112,PG.MN112,True,True,0,1.0,1.0,False,False,1,0.9333333333333333,0.875,PGoMN112,PG.MN112
+plate_0004.png,content\plates\plate_0004.png,HR 26 BC 55I4,HR 26 BC 5514,HR 26 BC SSI4,False,True,0,1.0,1.0,False,True,0,1.0,1.0,HR 26 BC 55I4,HR 26 BC 5514
+plate_0005.png,content\plates\plate_0005.png,6861136,6861/*36,68:611.36,False,False,2,0.8,0.7142857142857143,False,False,1,0.9333333333333333,0.8571428571428572,6861136,6861/*36
+plate_0009.png,content\plates\plate_0009.png,nan,[NO TEXT],..........,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0010.png,content\plates\plate_0010.png,NL60LXB,MeoLwB,NL60 LXB,False,False,4,0.46153846153846156,0.4285714285714286,False,True,0,1.0,1.0,NL60LXB,MeoLwB
+plate_0011.png,content\plates\plate_0011.png,SBA1234A,SDA 12341|,SBA 1234A,False,False,3,0.7058823529411764,0.625,False,True,0,1.0,1.0,SBA1234A,SDA 12341|
+plate_0027.png,content\plates\plate_0027.png,nan,[NO TEXT],CAMEL,False,False,8,0.0,-1.6666666666666665,False,False,5,0.0,-0.6666666666666667,nan,[NO TEXT]
+plate_0027.png,content\plates\plate_0027.png,nan,[NO TEXT],CAMEL,False,False,8,0.0,-1.6666666666666665,False,False,5,0.0,-0.6666666666666667,nan,[NO TEXT]
+plate_0027.png,content\plates\plate_0027.png,nan,[NO TEXT],CAMEL,False,False,8,0.0,-1.6666666666666665,False,False,5,0.0,-0.6666666666666667,nan,[NO TEXT]
+plate_0028.png,content\plates\plate_0028.png,MH 20 BQ 20,B020,MH 20 80 20,False,False,4,0.6666666666666667,0.5,False,True,0,1.0,1.0,MH 20 BQ 20,B020
+plate_0029.png,content\plates\plate_0029.png,MHO 1 AV8866,NHO1av8866,MHO 1AV8866,False,False,3,0.7,0.7,False,True,0,1.0,1.0,MHO 1 AV8866,NHO1av8866
+plate_0030.png,content\plates\plate_0030.png,CZ17 KOD,CzI7 Kod,CZI7 KOD,False,False,2,0.7142857142857143,0.7142857142857143,False,True,0,1.0,1.0,CZ17 KOD,CzI7 Kod
+plate_0031.png,content\plates\plate_0031.png,WOR 516K,Nor 516k,WOR 516K,False,False,3,0.5714285714285714,0.5714285714285714,True,True,0,1.0,1.0,WOR 516K,Nor 516k
+plate_0032.png,content\plates\plate_0032.png,F1,F,F1,False,False,1,0.6666666666666667,0.5,True,True,0,1.0,1.0,F1,F
+plate_0033.png,content\plates\plate_0033.png,MH 20 EE 7598,YMhzoeE 7598,MH 20 EE 7598,False,False,4,0.6666666666666667,0.6,True,True,0,1.0,1.0,MH 20 EE 7598,YMhzoeE 7598
+plate_0034.png,content\plates\plate_0034.png,SHAKNBK,SHAKNBK,SHAKNBK,True,True,0,1.0,1.0,True,True,0,1.0,1.0,SHAKNBK,
+plate_0035.png,content\plates\plate_0035.png,MPEACHW,MPEACHW,MPEACHW,True,True,0,1.0,1.0,True,True,0,1.0,1.0,MPEACHW,
+plate_0037.png,content\plates\plate_0037.png,M666 YOB,Ms66 YOB,M666 YOB,False,False,1,0.8571428571428572,0.8571428571428572,True,True,0,1.0,1.0,M666 YOB,Ms66 YOB
+plate_0038.png,content\plates\plate_0038.png,MK-35-32,MK 35-32,MK-35-32,False,True,0,1.0,1.0,True,True,0,1.0,1.0,MK-35-32,MK 35-32
+plate_0040.png,content\plates\plate_0040.png,JA62 UAR,Ja62 UAR,JA62 UAR,False,False,1,0.8571428571428572,0.8571428571428572,True,True,0,1.0,1.0,JA62 UAR,Ja62 UAR
+plate_0042.png,content\plates\plate_0042.png,MH12BG7237,'8h82b672371,EMH 12BG 7237,False,False,7,0.4545454545454546,0.30000000000000004,False,False,1,0.9523809523809523,0.9,MH12BG7237,'8h82b672371
+plate_0043.png,content\plates\plate_0043.png,B 2228HM,B 2228HH,B 2228 HM,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,B 2228HM,B 2228HH
+plate_0045.png,content\plates\plate_0045.png,MANISA,MANISA,MANISA,True,True,0,1.0,1.0,True,True,0,1.0,1.0,MANISA,
+plate_0046.png,content\plates\plate_0046.png,HR 26 BC 5514,HR 26 BC 5514,HR 26 BC SSI4,True,True,0,1.0,1.0,False,True,0,1.0,1.0,HR 26 BC 5514,HR 26 BC SSI4
+plate_0048.png,content\plates\plate_0048.png,RP66887,At,6.687,False,False,7,0.0,0.0,False,False,3,0.7272727272727273,0.5714285714285714,RP66887,At
+plate_0049.png,content\plates\plate_0049.png,KA G5MG1909,KA,KA 05 MG 1999,False,False,8,0.33333333333333337,0.19999999999999996,False,False,2,0.8,0.8,KA G5MG1909,KA
+plate_0051.png,content\plates\plate_0051.png,OX65 AWD,AwD,0X65 AND,False,False,5,0.4,0.2857142857142857,False,False,1,0.8571428571428572,0.8571428571428572,OX65 AWD,AwD
+plate_0052.png,content\plates\plate_0052.png,OPEC LOL,OPEC LOL,OPEC LOL,True,True,0,1.0,1.0,True,True,0,1.0,1.0,OPEC LOL,
+plate_0053.png,content\plates\plate_0053.png,BJR216,0u8216,BURZ16,False,False,3,0.6666666666666667,0.5,False,False,1,0.8333333333333334,0.8333333333333334,BJR216,0u8216
+plate_0054.png,content\plates\plate_0054.png,HR 26 BR 9044,HR 26 BR 9044,HR 26 BR 90-44,True,True,0,1.0,1.0,False,True,0,1.0,1.0,HR 26 BR 9044,HR 26 BR 90-44
+plate_0059.png,content\plates\plate_0059.png,nan,[NO TEXT],====,False,False,8,0.0,-1.6666666666666665,False,False,4,0.0,-0.33333333333333326,nan,[NO TEXT]
+plate_0060.png,content\plates\plate_0060.png,1268,1268:,= 1268-,False,False,1,0.8888888888888888,0.75,False,False,1,0.8888888888888888,0.75,1268,1268:
+plate_0061.png,content\plates\plate_0061.png,LI9 TLC,L9ILC,LIS TLC,False,False,2,0.7272727272727273,0.6666666666666667,False,False,1,0.8333333333333334,0.8333333333333334,LI9 TLC,L9ILC
+plate_0063.png,content\plates\plate_0063.png,15474,I44,U. 5474,False,False,2,0.75,0.6,False,False,1,0.8,0.8,15474,I44
+plate_0069.png,content\plates\plate_0069.png,nan,[NO TEXT],LOULUS,False,False,8,0.0,-1.6666666666666665,False,False,6,0.0,-1.0,nan,[NO TEXT]
+plate_0070.png,content\plates\plate_0070.png,ALR 486,ALR 486,ALR 486,True,True,0,1.0,1.0,True,True,0,1.0,1.0,ALR 486,
+plate_0071.png,content\plates\plate_0071.png,CH01AN0001,CHOIANooo],CHO1ANOOOT,False,True,0,1.0,1.0,False,False,1,0.9,0.9,CH01AN0001,CHOIANooo]
+plate_0077.png,content\plates\plate_0077.png,FU3346,DNZI0IT,EN ZIOIT,False,False,7,0.0,-0.16666666666666674,False,False,7,0.0,-0.16666666666666674,FU3346,DNZI0IT
+plate_0077.png,content\plates\plate_0077.png,nan,DNZI0IT,EN ZIOIT,False,False,7,0.0,-1.3333333333333335,False,False,7,0.0,-1.3333333333333335,nan,DNZI0IT
+plate_0078.png,content\plates\plate_0078.png,PEN15,PEN 15,PENIS,False,True,0,1.0,1.0,False,True,0,1.0,1.0,PEN15,PEN 15
+plate_0079.png,content\plates\plate_0079.png,CH01AN0001,CHO1,CHO1 AN 0001,False,False,6,0.5714285714285714,0.4,False,True,0,1.0,1.0,CH01AN0001,CHO1
+plate_0095.png,content\plates\plate_0095.png,nan,[NO TEXT],-,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0095.png,content\plates\plate_0095.png,nan,[NO TEXT],-,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0095.png,content\plates\plate_0095.png,nan,[NO TEXT],-,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0096.png,content\plates\plate_0096.png,KLG1CA2555,KLGACA2555^,KLO1CA2555,False,False,2,0.8571428571428572,0.8,False,False,1,0.9,0.9,KLG1CA2555,KLGACA2555^
+plate_0097.png,content\plates\plate_0097.png,MH01BB550,WH 01 BB 550,PHOT. 99:559,False,False,1,0.8888888888888888,0.8888888888888888,False,False,6,0.42105263157894735,0.33333333333333337,MH01BB550,WH 01 BB 550
+plate_0098.png,content\plates\plate_0098.png,7VI6263,241G263,7VIG263,False,False,3,0.5714285714285714,0.5714285714285714,False,False,1,0.8571428571428572,0.8571428571428572,7VI6263,241G263
+plate_0099.png,content\plates\plate_0099.png,TN21BY0166,[NO TEXT],TERIBIDIES,False,False,8,0.33333333333333337,0.19999999999999996,False,False,6,0.4,0.4,TN21BY0166,[NO TEXT]
+plate_0100.png,content\plates\plate_0100.png,DL8CX 4850,DlacX 4850,@DLBCX 4850,False,False,2,0.7777777777777778,0.7777777777777778,False,False,1,0.9473684210526316,0.8888888888888888,DL8CX 4850,DlacX 4850
+plate_0101.png,content\plates\plate_0101.png,DL3CBD5092,DaceD 5092|,BEDGET,False,False,5,0.6,0.5,False,False,9,0.25,0.09999999999999998,DL3CBD5092,DaceD 5092|
+plate_0102.png,content\plates\plate_0102.png,DL49 AK49,DL4P Ak4P,DL49 AK49,False,False,3,0.625,0.625,True,True,0,1.0,1.0,DL49 AK49,DL4P Ak4P
+plate_0103.png,content\plates\plate_0103.png,MH 20BQ20,Mh 208020,MH EO BEED,False,False,1,0.875,0.875,False,False,4,0.5,0.5,MH 20BQ20,Mh 208020
+plate_0104.png,content\plates\plate_0104.png,2662,38 2662,2.62,False,False,2,0.8,0.5,False,False,1,0.8571428571428572,0.75,2662,38 2662
+plate_0105.png,content\plates\plate_0105.png,MCB025,Mcb' 025,IMCB-025,False,False,3,0.6153846153846154,0.5,False,False,1,0.9230769230769231,0.8333333333333334,MCB025,Mcb' 025
+plate_0106.png,content\plates\plate_0106.png,PRIV ATE,PRIV ATe,PRIVATE,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,PRIV ATE,PRIV ATe
+plate_0107.png,content\plates\plate_0107.png,PYB557K,BIBSS,OTB 557K,False,False,4,0.5,0.4285714285714286,False,False,2,0.7142857142857143,0.7142857142857143,PYB557K,BIBSS
+plate_0108.png,content\plates\plate_0108.png,695299,695299,695299,True,True,0,1.0,1.0,True,True,0,1.0,1.0,695299,
+plate_0109.png,content\plates\plate_0109.png,DL7CN5617,DLZC N 5617,DL 7C N 5617,False,False,1,0.8888888888888888,0.8888888888888888,False,True,0,1.0,1.0,DL7CN5617,DLZC N 5617
+plate_0111.png,content\plates\plate_0111.png,OO7PLATE.COM,QuPLATEcou,DOTPLATE.COM,False,False,4,0.6666666666666667,0.6363636363636364,False,False,2,0.8181818181818181,0.8181818181818181,OO7PLATE.COM,QuPLATEcou
+plate_0112.png,content\plates\plate_0112.png,M666 YOB,Ms66 YOB,MS66 YOB,False,False,1,0.8571428571428572,0.8571428571428572,False,False,1,0.8571428571428572,0.8571428571428572,M666 YOB,Ms66 YOB
+plate_0114.png,content\plates\plate_0114.png,LR33 TEE,OLr3? TEE,L'R33 TEE,False,False,3,0.6666666666666667,0.5714285714285714,False,False,1,0.9333333333333333,0.8571428571428572,LR33 TEE,OLr3? TEE
+plate_0115.png,content\plates\plate_0115.png,GT,GT,GT,True,True,0,1.0,1.0,True,True,0,1.0,1.0,GT,
+plate_0116.png,content\plates\plate_0116.png,TN21AU 1153,I5J,TAREY AU 1153,False,False,8,0.3076923076923077,0.19999999999999996,False,False,4,0.6666666666666667,0.6,TN21AU 1153,I5J
+plate_0117.png,content\plates\plate_0117.png,IM A CAR,ILA CAR,[TRIATCAR],False,False,1,0.8333333333333334,0.8333333333333334,False,False,6,0.625,0.0,IM A CAR,ILA CAR
+plate_0118.png,content\plates\plate_0118.png,15-LK-10898,15-LK-108987,15-LK-10898,False,False,1,0.9473684210526316,0.8888888888888888,True,True,0,1.0,1.0,15-LK-10898,15-LK-108987
+plate_0119.png,content\plates\plate_0119.png,2222,[NO TEXT],CAMEL,False,False,8,0.0,-1.0,False,False,5,0.0,-0.25,2222,[NO TEXT]
+plate_0120.png,content\plates\plate_0120.png,PRIV ATE,PRIV ATE,PRIVATE,True,True,0,1.0,1.0,False,True,0,1.0,1.0,PRIV ATE,PRIVATE
+plate_0121.png,content\plates\plate_0121.png,YSX 213,YSX213,YSX-213,False,True,0,1.0,1.0,False,True,0,1.0,1.0,YSX 213,YSX213
+plate_0122.png,content\plates\plate_0122.png,983,9827,E,False,False,2,0.5714285714285714,0.33333333333333337,False,False,3,0.0,0.0,983,9827
+plate_0123.png,content\plates\plate_0123.png,BJR216,0u8216,BUR216,False,False,3,0.6666666666666667,0.5,False,False,1,0.8333333333333334,0.8333333333333334,BJR216,0u8216
+plate_0124.png,content\plates\plate_0124.png,C 09,HFC 09,4C 09,False,False,2,0.75,0.33333333333333337,False,False,1,0.8571428571428572,0.6666666666666667,C 09,HFC 09
+plate_0125.png,content\plates\plate_0125.png,WMY-9051,RHY-9051,WMY-9051,False,False,2,0.7142857142857143,0.7142857142857143,True,True,0,1.0,1.0,WMY-9051,RHY-9051
+plate_0129.png,content\plates\plate_0129.png,nan,[NO TEXT],REPORT,False,False,8,0.0,-1.6666666666666665,False,False,6,0.0,-1.0,nan,[NO TEXT]
+plate_0130.png,content\plates\plate_0130.png,DL!N4268,[NO TEXT],DE-TALACCO,False,False,8,0.125,0.0,False,False,8,0.23529411764705888,0.0,DL!N4268,[NO TEXT]
+plate_0131.png,content\plates\plate_0131.png,EVO9FTW,EVQ?,EVO2 ETM,False,False,4,0.5454545454545454,0.4285714285714286,False,False,3,0.5714285714285714,0.5714285714285714,EVO9FTW,EVQ?
+plate_0132.png,content\plates\plate_0132.png,GOOD,GOOd,GOOD,False,False,1,0.75,0.75,True,True,0,1.0,1.0,GOOD,GOOd
+plate_0133.png,content\plates\plate_0133.png,522 92Z,'5222922,522-922,False,False,2,0.8571428571428572,0.6666666666666667,False,True,0,1.0,1.0,522 92Z,'5222922
+plate_0134.png,content\plates\plate_0134.png,4SZW590,Lsz4590],45ZW590,False,False,4,0.5333333333333333,0.4285714285714286,False,True,0,1.0,1.0,4SZW590,Lsz4590]
+plate_0135.png,content\plates\plate_0135.png,M666YOB,Ms66 YOB,M866 YOB,False,False,1,0.8571428571428572,0.8571428571428572,False,False,1,0.8571428571428572,0.8571428571428572,M666YOB,Ms66 YOB
+plate_0136.png,content\plates\plate_0136.png,MPEACHW,MPEACHW,MPEACHW,True,True,0,1.0,1.0,True,True,0,1.0,1.0,MPEACHW,
+plate_0137.png,content\plates\plate_0137.png,JHIIHAD,Jhiw,JHTHAD,False,False,6,0.18181818181818177,0.1428571428571429,False,False,2,0.7692307692307692,0.7142857142857143,JHIIHAD,Jhiw
+plate_0138.png,content\plates\plate_0138.png,VI2LAF,VI2 LAF,VI2 LAF,False,True,0,1.0,1.0,False,True,0,1.0,1.0,VI2LAF,VI2 LAF
+plate_0139.png,content\plates\plate_0139.png,BRIT 0001,BRIT 0001,BRIT 0001,True,True,0,1.0,1.0,True,True,0,1.0,1.0,BRIT 0001,
+plate_0140.png,content\plates\plate_0140.png,SWIFT,swict,SWIFT,False,False,4,0.19999999999999996,0.19999999999999996,True,True,0,1.0,1.0,SWIFT,swict
+plate_0142.png,content\plates\plate_0142.png,26-SPF-4,0zo SPE4,[26-SPF-4],False,False,4,0.46153846153846156,0.33333333333333337,False,False,2,0.8571428571428572,0.6666666666666667,26-SPF-4,0zo SPE4
+plate_0143.png,content\plates\plate_0143.png,ALR 486,ALR 406,ALR 486,False,False,1,0.8333333333333334,0.8333333333333334,True,True,0,1.0,1.0,ALR 486,ALR 406
+plate_0145.png,content\plates\plate_0145.png,CH01AN0001,CHOIANOOOU,CHO1AN 0001,False,False,1,0.9,0.9,False,True,0,1.0,1.0,CH01AN0001,CHOIANOOOU
+plate_0146.png,content\plates\plate_0146.png,AFR.2011,AFR2011,AFR:2011,False,True,0,1.0,1.0,False,False,1,0.9333333333333333,0.8571428571428572,AFR.2011,AFR2011
+plate_0147.png,content\plates\plate_0147.png,KL54A2670,KL54 A2670,KL54.A.2670,False,True,0,1.0,1.0,False,True,0,1.0,1.0,KL54A2670,KL54 A2670
+plate_0148.png,content\plates\plate_0148.png,KA03AB3380,IA 02 AB  3380,NA 03 AB 3380,False,False,2,0.8,0.8,False,False,1,0.9,0.9,KA03AB3380,IA 02 AB  3380
+plate_0149.png,content\plates\plate_0149.png,E4 GLE,E4 GLE,E4 GLE,True,True,0,1.0,1.0,True,True,0,1.0,1.0,E4 GLE,
+plate_0150.png,content\plates\plate_0150.png,669VSM,389 VSD,BB9-VSM,False,False,3,0.5,0.5,False,False,2,0.6666666666666667,0.6666666666666667,669VSM,389 VSD
+plate_0151.png,content\plates\plate_0151.png,TN 21 BZ GT68,Ha,TN 21 BZ 0768,False,False,10,0.0,0.0,False,False,2,0.8,0.8,TN 21 BZ GT68,Ha
+plate_0152.png,content\plates\plate_0152.png,Ciaz,C,Claz,False,False,3,0.4,0.25,False,False,1,0.75,0.75,Ciaz,C
+plate_0154.png,content\plates\plate_0154.png,LR33TEE,Lras IEE,L'R33 TEE,False,False,4,0.4285714285714286,0.4285714285714286,False,False,1,0.9333333333333333,0.8571428571428572,LR33TEE,Lras IEE
+plate_0155.png,content\plates\plate_0155.png,MH01AV8866,KhO|av886G,-MHO1AV8866,False,False,5,0.5,0.5,False,True,0,1.0,1.0,MH01AV8866,KhO|av886G
+plate_0156.png,content\plates\plate_0156.png,MHO1AE8017,"""HHO |HE80AZ ",MHO1AE8017,False,False,5,0.5714285714285714,0.5,True,True,0,1.0,1.0,MHO1AE8017,"""HHO |HE80AZ "
+plate_0159.png,content\plates\plate_0159.png,KA03AB3380,Ia 08 AB | 3380,KA 03 AB 3380,False,False,4,0.6666666666666667,0.6,False,True,0,1.0,1.0,KA03AB3380,Ia 08 AB | 3380
+plate_0160.png,content\plates\plate_0160.png,LR33 TEE,[LRZHTE,LAR33 TEE,False,False,4,0.5714285714285714,0.4285714285714286,False,False,1,0.9333333333333333,0.8571428571428572,LR33 TEE,[LRZHTE
+plate_0161.png,content\plates\plate_0161.png,KWID,KWID,KWID,True,True,0,1.0,1.0,True,True,0,1.0,1.0,KWID,
+plate_0162.png,content\plates\plate_0162.png,CZ17 KOD,Czi7 Kod,CZIZ KOD,False,False,3,0.5714285714285714,0.5714285714285714,False,False,1,0.8571428571428572,0.8571428571428572,CZ17 KOD,Czi7 Kod
+plate_0163.png,content\plates\plate_0163.png,N BYOND,"R"" BYOND",N BYOND,False,False,2,0.7692307692307692,0.6666666666666667,True,True,0,1.0,1.0,N BYOND,"R"" BYOND"
+plate_0164.png,content\plates\plate_0164.png,NOTACOP,NOIACOP,NOTACOP,False,False,1,0.8571428571428572,0.8571428571428572,True,True,0,1.0,1.0,NOTACOP,NOIACOP
+plate_0165.png,content\plates\plate_0165.png,HR 26 BU 0380,HR 20 BU 034q,HR 26 BU 6380,False,False,3,0.7,0.7,False,False,1,0.9,0.9,HR 26 BU 0380,HR 20 BU 034q
+plate_0166.png,content\plates\plate_0166.png,K817GR,KGI7GR,K817GR,False,False,1,0.8333333333333334,0.8333333333333334,True,True,0,1.0,1.0,K817GR,KGI7GR
+plate_0167.png,content\plates\plate_0167.png,V-8,V-8,V.8,True,True,0,1.0,1.0,False,True,0,1.0,1.0,V-8,V.8
+plate_0169.png,content\plates\plate_0169.png,!RQ,IRO,1. 1RD,False,False,1,0.6666666666666667,0.6666666666666667,False,False,3,0.2857142857142857,0.0,!RQ,IRO
+plate_0170.png,content\plates\plate_0170.png,MHO1AE8017,"""HHO HHEBOUZ",#MH01AE8017,False,False,6,0.47619047619047616,0.4,False,False,1,0.9523809523809523,0.9,MHO1AE8017,"""HHO HHEBOUZ"
+plate_0171.png,content\plates\plate_0171.png,F 65022,F 65022,F 65022,True,True,0,1.0,1.0,True,True,0,1.0,1.0,F 65022,
+plate_0172.png,content\plates\plate_0172.png,KL 65 H 4383,E5 H4383,KL 85 H 4383,False,False,3,0.75,0.6666666666666667,False,False,1,0.8888888888888888,0.8888888888888888,KL 65 H 4383,E5 H4383
+plate_0173.png,content\plates\plate_0173.png,DID2,DuD,12/2,False,False,2,0.5714285714285714,0.5,False,False,3,0.5,0.25,DID2,DuD
+plate_0175.png,content\plates\plate_0175.png,CH 9984,LFuch 9984,[ CH 9984],False,False,5,0.5333333333333333,0.16666666666666663,False,False,2,0.8571428571428572,0.6666666666666667,CH 9984,LFuch 9984
+plate_0176.png,content\plates\plate_0176.png,OPEC LOL,OPEC LOL,OPEC LOL,True,True,0,1.0,1.0,True,True,0,1.0,1.0,OPEC LOL,
+plate_0177.png,content\plates\plate_0177.png,AFR-2011,AFR2011|,AFR:2011,False,False,1,0.9333333333333333,0.8571428571428572,False,False,1,0.9333333333333333,0.8571428571428572,AFR-2011,AFR2011|
+plate_0178.png,content\plates\plate_0178.png,25Z5,2525,1255,False,True,0,1.0,1.0,False,False,2,0.75,0.5,25Z5,2525
+plate_0179.png,content\plates\plate_0179.png,KA03 MG 2784,KA U8 MG: 2984,KA 03 MG 2784,False,False,4,0.6666666666666667,0.6,False,True,0,1.0,1.0,KA03 MG 2784,KA U8 MG: 2984
+plate_0180.png,content\plates\plate_0180.png,YAMRAJ,Vamka,YAMRAJ,False,False,6,0.0,0.0,True,True,0,1.0,1.0,YAMRAJ,Vamka
+plate_0181.png,content\plates\plate_0181.png,PG55585,[g55585,[P 055 565],False,False,2,0.7142857142857143,0.7142857142857143,False,False,4,0.625,0.4285714285714286,PG55585,[g55585
+plate_0183.png,content\plates\plate_0183.png,26-SPF-4,26 SPF 4,26-SPF-4,False,True,0,1.0,1.0,True,True,0,1.0,1.0,26-SPF-4,26 SPF 4
+plate_0184.png,content\plates\plate_0184.png,VHB-431,WB ZuI,VHB-431,False,False,4,0.36363636363636365,0.33333333333333337,True,True,0,1.0,1.0,VHB-431,WB ZuI
+plate_0186.png,content\plates\plate_0186.png,JA62 UAR,JA6Z UAR,JA62 UAR,False,True,0,1.0,1.0,True,True,0,1.0,1.0,JA62 UAR,JA6Z UAR
+plate_0187.png,content\plates\plate_0187.png,TN 19 S 4523,[552,TN 19 S 4523,False,False,6,0.46153846153846156,0.33333333333333337,True,True,0,1.0,1.0,TN 19 S 4523,[552
+plate_0191.png,content\plates\plate_0191.png,9214,921a,9214,False,False,1,0.75,0.75,True,True,0,1.0,1.0,9214,921a
+plate_0192.png,content\plates\plate_0192.png,LR33 TEE,LR33 TEE,L R33 TEE,True,True,0,1.0,1.0,False,True,0,1.0,1.0,LR33 TEE,L R33 TEE
+plate_0193.png,content\plates\plate_0193.png,GB18 TCE,GBie TCE,GBIB TCE,False,False,2,0.7142857142857143,0.7142857142857143,False,True,0,1.0,1.0,GB18 TCE,GBie TCE
+plate_0195.png,content\plates\plate_0195.png,UP 16 T C1366,UPIcICDEO,[UPICTCISES],False,False,6,0.42105263157894735,0.4,False,False,6,0.5454545454545454,0.4,UP 16 T C1366,UPIcICDEO
+plate_0196.png,content\plates\plate_0196.png,IM4U 555,IMAU 555,IM4U 555,False,False,1,0.8571428571428572,0.8571428571428572,True,True,0,1.0,1.0,IM4U 555,IMAU 555
+plate_0197.png,content\plates\plate_0197.png,GJ03JL0126,6J0JJL0426,GJ03JL0126,False,False,3,0.7,0.7,True,True,0,1.0,1.0,GJ03JL0126,6J0JJL0426
+plate_0200.png,content\plates\plate_0200.png,A D00008,doqooa,LA DODOS,False,False,4,0.46153846153846156,0.4285714285714286,False,False,4,0.5714285714285714,0.4285714285714286,A D00008,doqooa
+plate_0201.png,content\plates\plate_0201.png,15-LK-10898,5-Lk-108981,15-LK-10898,False,False,3,0.7777777777777778,0.6666666666666667,True,True,0,1.0,1.0,15-LK-10898,5-Lk-108981
+plate_0202.png,content\plates\plate_0202.png,HR 26 BC 5514,HR 26 BC 5514,HR 26 BC SSI4,True,True,0,1.0,1.0,False,True,0,1.0,1.0,HR 26 BC 5514,HR 26 BC SSI4
+plate_0203.png,content\plates\plate_0203.png,1 CD AF,Cd  AF,1 CD_AF,False,False,2,0.6666666666666667,0.6,False,False,1,0.9090909090909091,0.8,1 CD AF,Cd  AF
+plate_0204.png,content\plates\plate_0204.png,3SAM123,3SAM123,3SAM123,True,True,0,1.0,1.0,True,True,0,1.0,1.0,3SAM123,
+plate_0206.png,content\plates\plate_0206.png,KA.03.MG . 2784,KA U8 HG : 2184,KA 03 MG 2784,False,False,5,0.5714285714285714,0.5,False,True,0,1.0,1.0,KA.03.MG . 2784,KA U8 HG : 2184
+plate_0207.png,content\plates\plate_0207.png,21-801-27,21.801*27,21:801-27,False,False,1,0.9333333333333333,0.8571428571428572,False,False,1,0.9333333333333333,0.8571428571428572,21-801-27,21.801*27
+plate_0208.png,content\plates\plate_0208.png,HR 26.BR.9044,HR 26 BR 9044,HR 26 BR. 9044,False,True,0,1.0,1.0,False,True,0,1.0,1.0,HR 26.BR.9044,HR 26 BR 9044
+plate_0209.png,content\plates\plate_0209.png,TS009 TC 268,TSt0i,100.0,False,False,7,0.4,0.30000000000000004,False,False,8,0.2857142857142857,0.19999999999999996,TS009 TC 268,TSt0i
+plate_0211.png,content\plates\plate_0211.png,MH12DE1433,0h42 DE4433,MH 12 DE 1433,False,False,4,0.6,0.6,False,True,0,1.0,1.0,MH12DE1433,0h42 DE4433
+plate_0227.png,content\plates\plate_0227.png,nan,K444 Qus3,KA:22-M-0852,False,False,8,0.0,-1.6666666666666665,False,False,10,0.0,-2.3333333333333335,nan,K444 Qus3
+plate_0227.png,content\plates\plate_0227.png,nan,K444 Qus3,KA:22-M-0852,False,False,8,0.0,-1.6666666666666665,False,False,10,0.0,-2.3333333333333335,nan,K444 Qus3
+plate_0227.png,content\plates\plate_0227.png,nan,K444 Qus3,KA:22-M-0852,False,False,8,0.0,-1.6666666666666665,False,False,10,0.0,-2.3333333333333335,nan,K444 Qus3
+plate_0229.png,content\plates\plate_0229.png,PG MN112,PGoWNi2,PG.MN112,False,False,4,0.5714285714285714,0.4285714285714286,False,True,0,1.0,1.0,PG MN112,PGoWNi2
+plate_0230.png,content\plates\plate_0230.png,H982FKL,Kpetu,HERBERG,False,False,7,0.16666666666666663,0.0,False,False,6,0.2857142857142857,0.1428571428571429,H982FKL,Kpetu
+plate_0231.png,content\plates\plate_0231.png,DAN54P,DAM54P,DAN 54P,False,False,1,0.8333333333333334,0.8333333333333334,False,True,0,1.0,1.0,DAN54P,DAM54P
+plate_0233.png,content\plates\plate_0233.png,GOT2P00,GOTzPOO,GOTZPOO,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,GOT2P00,GOTzPOO
+plate_0234.png,content\plates\plate_0234.png,MH20EJ0364,MH2OEJ0364,MH 20 E J 0 364,False,True,0,1.0,1.0,False,True,0,1.0,1.0,MH20EJ0364,MH2OEJ0364
+plate_0235.png,content\plates\plate_0235.png,YD63LB,LB,YD63 LB,False,False,4,0.5,0.33333333333333337,False,True,0,1.0,1.0,YD63LB,LB
+plate_0236.png,content\plates\plate_0236.png,OK LA,OK LA,OK LA,True,True,0,1.0,1.0,True,True,0,1.0,1.0,OK LA,
+plate_0237.png,content\plates\plate_0237.png,KA 01 AC 5957,KAol,RECEIVED,False,False,6,0.5714285714285714,0.4,False,False,10,0.11111111111111116,0.0,KA 01 AC 5957,KAol
+plate_0238.png,content\plates\plate_0238.png,MH 20 EE 7598,MH2OEE 7598,MH 20 EE 7598,False,True,0,1.0,1.0,True,True,0,1.0,1.0,MH 20 EE 7598,MH2OEE 7598
+plate_0240.png,content\plates\plate_0240.png,IH4U 5333,75333,[INAU 5333,False,False,4,0.6153846153846154,0.5,False,False,3,0.7058823529411764,0.625,IH4U 5333,75333
+plate_0241.png,content\plates\plate_0241.png,NDTS08ER1643,"""TSOBERI64",STSOBER1643,False,False,3,0.8181818181818181,0.75,False,False,2,0.8695652173913043,0.8333333333333334,NDTS08ER1643,"""TSOBERI64"
+plate_0243.png,content\plates\plate_0243.png,MH 02 CB 4545,MH02 CB,MH 02 CB 4545,False,False,4,0.75,0.6,True,True,0,1.0,1.0,MH 02 CB 4545,MH02 CB
+plate_0244.png,content\plates\plate_0244.png,FAMU 2010,FAnu,FAMIL 2010,False,False,6,0.33333333333333337,0.25,False,False,2,0.8235294117647058,0.75,FAMU 2010,FAnu
+plate_0245.png,content\plates\plate_0245.png,M . 771276,M771278,M. 771276,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,M . 771276,M771278
+plate_0281.png,content\plates\plate_0281.png,nan,[NO TEXT],5,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0281.png,content\plates\plate_0281.png,nan,[NO TEXT],5,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0281.png,content\plates\plate_0281.png,nan,[NO TEXT],5,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0281.png,content\plates\plate_0281.png,nan,[NO TEXT],5,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0281.png,content\plates\plate_0281.png,nan,[NO TEXT],5,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0285.png,content\plates\plate_0285.png,DZ17 YXR,DZI7 YXR,DZI7 YXR,False,True,0,1.0,1.0,False,True,0,1.0,1.0,DZ17 YXR,DZI7 YXR
+plate_0286.png,content\plates\plate_0286.png,1P018299,7801e7991,180182991,False,False,5,0.47058823529411764,0.375,False,False,2,0.8235294117647058,0.75,1P018299,7801e7991
+plate_0287.png,content\plates\plate_0287.png,YES BOSS,YeS B0s5,YES BOSS,False,False,1,0.8571428571428572,0.8571428571428572,True,True,0,1.0,1.0,YES BOSS,YeS B0s5
+plate_0288.png,content\plates\plate_0288.png,RX6I GDU,RXGI GDU,RXGI GOU,False,False,1,0.8571428571428572,0.8571428571428572,False,False,2,0.7142857142857143,0.7142857142857143,RX6I GDU,RXGI GDU
+plate_0289.png,content\plates\plate_0289.png,BRIT 0001,BRIT O001,[ BRIT 0001 ],False,True,0,1.0,1.0,False,False,2,0.8888888888888888,0.75,BRIT 0001,BRIT O001
+plate_0290.png,content\plates\plate_0290.png,MANISA,MANISA,MANISA,True,True,0,1.0,1.0,True,True,0,1.0,1.0,MANISA,
+plate_0291.png,content\plates\plate_0291.png,BATMAN,BHIMAH ,BATMAN,False,False,3,0.5,0.5,True,True,0,1.0,1.0,BATMAN,BHIMAH 
+plate_0292.png,content\plates\plate_0292.png,CZ17 KOD,CZI7 Kod,CZI7 KOD,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,CZ17 KOD,CZI7 Kod
+plate_0308.png,content\plates\plate_0308.png,nan,[NO TEXT],TOTAL,False,False,8,0.0,-1.6666666666666665,False,False,5,0.0,-0.6666666666666667,nan,[NO TEXT]
+plate_0308.png,content\plates\plate_0308.png,nan,[NO TEXT],TOTAL,False,False,8,0.0,-1.6666666666666665,False,False,5,0.0,-0.6666666666666667,nan,[NO TEXT]
+plate_0308.png,content\plates\plate_0308.png,nan,[NO TEXT],TOTAL,False,False,8,0.0,-1.6666666666666665,False,False,5,0.0,-0.6666666666666667,nan,[NO TEXT]
+plate_0310.png,content\plates\plate_0310.png,MMN 306,[NO TEXT],LORILLARD,False,False,8,0.2857142857142857,-0.33333333333333326,False,False,9,0.1333333333333333,-0.5,MMN 306,[NO TEXT]
+plate_0311.png,content\plates\plate_0311.png,AP 1-1 AM 0-91,[NO TEXT],APRILADO,False,False,8,0.23529411764705888,0.11111111111111116,False,False,4,0.7058823529411764,0.5555555555555556,AP 1-1 AM 0-91,[NO TEXT]
+plate_0313.png,content\plates\plate_0313.png,MH 01 DB 0001,MH04 D0 O004,MH 01 DB 0001,False,False,3,0.7,0.7,True,True,0,1.0,1.0,MH 01 DB 0001,MH04 D0 O004
+plate_0314.png,content\plates\plate_0314.png,68.611.36,"68,611336",68:611:36,False,False,2,0.875,0.7142857142857143,False,False,2,0.875,0.7142857142857143,68.611.36,"68,611336"
+plate_0318.png,content\plates\plate_0318.png,nan,[NO TEXT],-,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0320.png,content\plates\plate_0320.png,HR 26.BR.9044,HR 26 BR 9044,HR 26 BR. 9044,False,True,0,1.0,1.0,False,True,0,1.0,1.0,HR 26.BR.9044,HR 26 BR 9044
+plate_0321.png,content\plates\plate_0321.png,MIDLYPH,MIDLYPH,MIDLYPH,True,True,0,1.0,1.0,True,True,0,1.0,1.0,MIDLYPH,
+plate_0322.png,content\plates\plate_0322.png,DL 7C N 5617,DL7C N 5617,DL 7C N 5617,False,True,0,1.0,1.0,True,True,0,1.0,1.0,DL 7C N 5617,DL7C N 5617
+plate_0323.png,content\plates\plate_0323.png,BATMAN,BHINAH ,[ BATMAN,False,False,4,0.33333333333333337,0.33333333333333337,False,False,1,0.9230769230769231,0.8333333333333334,BATMAN,BHINAH 
+plate_0324.png,content\plates\plate_0324.png,S32H,532h,S32H,False,False,1,0.75,0.75,True,True,0,1.0,1.0,S32H,532h
+plate_0325.png,content\plates\plate_0325.png,9214,9217,9214,False,False,1,0.75,0.75,True,True,0,1.0,1.0,9214,9217
+plate_0326.png,content\plates\plate_0326.png,S 0V8199,[NO TEXT],7/00,False,False,7,0.2666666666666667,0.0,False,False,7,0.18181818181818177,0.0,S 0V8199,[NO TEXT]
+plate_0327.png,content\plates\plate_0327.png,KA-02 A-6579,Ea,#76-02 A-8579,False,False,9,0.0,0.0,False,False,4,0.631578947368421,0.5555555555555556,KA-02 A-6579,Ea
+plate_0329.png,content\plates\plate_0329.png,GBI8 TCE,GBle TCE,GBIB TCE,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,GBI8 TCE,GBle TCE
+plate_0330.png,content\plates\plate_0330.png,01 CC 1A 0001,M O6 IA M,01 CC 1A 0001,False,False,8,0.375,0.19999999999999996,True,True,0,1.0,1.0,01 CC 1A 0001,M O6 IA M
+plate_0334.png,content\plates\plate_0334.png,nan,[NO TEXT],-85-44,False,False,8,0.0,-1.6666666666666665,False,False,4,0.0,-0.33333333333333326,nan,[NO TEXT]
+plate_0335.png,content\plates\plate_0335.png,145,145,145,True,True,0,1.0,1.0,True,True,0,1.0,1.0,145,
+plate_0336.png,content\plates\plate_0336.png,IM4U 555,IMAU 555,IM4U 555,False,False,1,0.8571428571428572,0.8571428571428572,True,True,0,1.0,1.0,IM4U 555,IMAU 555
+plate_0337.png,content\plates\plate_0337.png,LAMBO,AMB,LAMBO,False,False,2,0.75,0.6,True,True,0,1.0,1.0,LAMBO,AMB
+plate_0338.png,content\plates\plate_0338.png,SDN7484U,SDN7484U,SDN 7484U,True,True,0,1.0,1.0,False,True,0,1.0,1.0,SDN7484U,SDN 7484U
+plate_0339.png,content\plates\plate_0339.png,DZI7 YXR,DZI7 YXR,DZI7 YXR,True,True,0,1.0,1.0,True,True,0,1.0,1.0,DZI7 YXR,
+plate_0340.png,content\plates\plate_0340.png,JPK 6546,p46546],JPK 6546.,False,False,4,0.5714285714285714,0.4285714285714286,False,True,0,1.0,1.0,JPK 6546,p46546]
+plate_0342.png,content\plates\plate_0342.png,G526 JHD,6526 JHD,G526 JHD,False,False,1,0.8571428571428572,0.8571428571428572,True,True,0,1.0,1.0,G526 JHD,6526 JHD
+plate_0343.png,content\plates\plate_0343.png,KL 01 CC 50,KL 01CC 50,KL 01 CC 50,False,True,0,1.0,1.0,True,True,0,1.0,1.0,KL 01 CC 50,KL 01CC 50
+plate_0344.png,content\plates\plate_0344.png,KL.54.A.2670,KL54 42670,KL54 A 2670,False,False,1,0.8888888888888888,0.8888888888888888,False,True,0,1.0,1.0,KL.54.A.2670,KL54 42670
+plate_0345.png,content\plates\plate_0345.png,HNYCHIL3,hiin,HNYCHIL3,False,False,8,0.0,0.0,True,True,0,1.0,1.0,HNYCHIL3,hiin
+plate_0346.png,content\plates\plate_0346.png,SGQ51_Ju,5g051 JU,SGDSL JU,False,False,3,0.6666666666666667,0.625,False,False,3,0.6666666666666667,0.625,SGQ51_Ju,5g051 JU
+plate_0347.png,content\plates\plate_0347.png,LAWYER,AWYER,LAWYER],False,False,1,0.9090909090909091,0.8333333333333334,False,False,1,0.9230769230769231,0.8333333333333334,LAWYER,AWYER
+plate_0348.png,content\plates\plate_0348.png,M.906090.K,19O 6090 K,M-90 60 90 K,False,False,1,0.875,0.875,False,True,0,1.0,1.0,M.906090.K,19O 6090 K
+plate_0349.png,content\plates\plate_0349.png,HR 26 BC 5514,HR 26 BC 5514,HR 26 BC 5514,True,True,0,1.0,1.0,True,True,0,1.0,1.0,HR 26 BC 5514,
+plate_0350.png,content\plates\plate_0350.png,EAB0001,EAB ,EAB 0001,False,False,4,0.6,0.4285714285714286,False,True,0,1.0,1.0,EAB0001,EAB 
+plate_0351.png,content\plates\plate_0351.png,YD63LB,LB,YD63 LB,False,False,4,0.5,0.33333333333333337,False,True,0,1.0,1.0,YD63LB,LB
+plate_0352.png,content\plates\plate_0352.png,4GET OIL,[NO TEXT],ACETTOTTE,False,False,6,0.4,0.1428571428571429,False,False,6,0.375,0.1428571428571429,4GET OIL,[NO TEXT]
+plate_0356.png,content\plates\plate_0356.png,TN21AT8349,[NO TEXT],LITIETT,False,False,8,0.2222222222222222,0.19999999999999996,False,False,8,0.3529411764705882,0.19999999999999996,TN21AT8349,[NO TEXT]
+plate_0356.png,content\plates\plate_0356.png,nan,[NO TEXT],LITIETT,False,False,8,0.0,-1.6666666666666665,False,False,7,0.0,-1.3333333333333335,nan,[NO TEXT]
+plate_0357.png,content\plates\plate_0357.png,PUI8 BES,PUIO BES,PUIS BES,False,False,1,0.8571428571428572,0.8571428571428572,False,False,1,0.8571428571428572,0.8571428571428572,PUI8 BES,PUIO BES
+plate_0358.png,content\plates\plate_0358.png,NBEYOND,NBEYOND ,NBEYOND,False,True,0,1.0,1.0,True,True,0,1.0,1.0,NBEYOND,NBEYOND 
+plate_0359.png,content\plates\plate_0359.png,6PIV728,GPIV728I,6PIV728,False,False,2,0.8,0.7142857142857143,True,True,0,1.0,1.0,6PIV728,GPIV728I
+plate_0360.png,content\plates\plate_0360.png,J98257,J98257,@ J98257,True,True,0,1.0,1.0,False,False,1,0.9230769230769231,0.8333333333333334,J98257,@ J98257
+plate_0364.png,content\plates\plate_0364.png,nan,4oz,MH 02 BB 2,False,False,3,0.0,0.0,False,False,7,0.0,-1.3333333333333335,nan,4oz
+plate_0365.png,content\plates\plate_0365.png,HR 26 BC 5514,HR 26 BC 5514,HR 26 BC SSI4,True,True,0,1.0,1.0,False,True,0,1.0,1.0,HR 26 BC 5514,HR 26 BC SSI4
+plate_0366.png,content\plates\plate_0366.png,ALR 486,ALR 486,ALR 486,True,True,0,1.0,1.0,True,True,0,1.0,1.0,ALR 486,
+plate_0367.png,content\plates\plate_0367.png,FALLYOU,FALLYOU,FALL YOU,True,True,0,1.0,1.0,False,True,0,1.0,1.0,FALLYOU,FALL YOU
+plate_0368.png,content\plates\plate_0368.png,MANISA,MANISA,MANISA,True,True,0,1.0,1.0,True,True,0,1.0,1.0,MANISA,
+plate_0369.png,content\plates\plate_0369.png,2662,2662,"""A"" 2662",True,True,0,1.0,1.0,False,False,3,0.7272727272727273,0.25,2662,"""A"" 2662"
+plate_0371.png,content\plates\plate_0371.png,700 V,700 ,700 V,False,False,1,0.8571428571428572,0.75,True,True,0,1.0,1.0,700 V,700 
+plate_0372.png,content\plates\plate_0372.png,TN99F2378,2378,TN 99 F 2378,False,False,5,0.6153846153846154,0.4444444444444444,False,True,0,1.0,1.0,TN99F2378,2378
+plate_0373.png,content\plates\plate_0373.png,VI2LAF,VIZLaF,VI2 LAF,False,False,1,0.8333333333333334,0.8333333333333334,False,True,0,1.0,1.0,VI2LAF,VIZLaF
+plate_0375.png,content\plates\plate_0375.png,DL8CX 4850,DLBCX 4850,DLBCX 4850,False,True,0,1.0,1.0,False,True,0,1.0,1.0,DL8CX 4850,DLBCX 4850
+plate_0376.png,content\plates\plate_0376.png,PGoMN112,PGqu2,PG.MN112,False,False,5,0.46153846153846156,0.375,False,False,1,0.9333333333333333,0.875,PGoMN112,PGqu2
+plate_0377.png,content\plates\plate_0377.png,IM4U 555,IMAU 555,IM4U 555,False,False,1,0.8571428571428572,0.8571428571428572,True,True,0,1.0,1.0,IM4U 555,IMAU 555
+plate_0378.png,content\plates\plate_0378.png,16M,L6H,LIGH,False,False,1,0.6666666666666667,0.6666666666666667,False,False,3,0.2857142857142857,0.0,16M,L6H
+plate_0379.png,content\plates\plate_0379.png,OX65 AWD,AND,DX65 AND,False,False,5,0.4,0.2857142857142857,False,False,2,0.7142857142857143,0.7142857142857143,OX65 AWD,AND
+plate_0395.png,content\plates\plate_0395.png,nan,[NO TEXT],=,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0395.png,content\plates\plate_0395.png,nan,[NO TEXT],=,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0395.png,content\plates\plate_0395.png,nan,[NO TEXT],=,False,False,8,0.0,-1.6666666666666665,False,False,3,0.0,0.0,nan,[NO TEXT]
+plate_0396.png,content\plates\plate_0396.png,HR 26 CB 1900,IR 20 Ch,HR.26.CB. 1990,False,False,7,0.375,0.30000000000000004,False,False,1,0.9,0.9,HR 26 CB 1900,IR 20 Ch
+plate_0397.png,content\plates\plate_0397.png,DZ17YXR,DZIZ YXR,DZI7 YXR,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,DZ17YXR,DZIZ YXR
+plate_0398.png,content\plates\plate_0398.png,MH20EJO364,MH2OEJ0364,MH 20 E J 0 364,False,True,0,1.0,1.0,False,True,0,1.0,1.0,MH20EJO364,MH2OEJ0364
+plate_0399.png,content\plates\plate_0399.png,E8OLA,EB OLA,EBOLA,False,True,0,1.0,1.0,False,True,0,1.0,1.0,E8OLA,EB OLA
+plate_0400.png,content\plates\plate_0400.png,NOTACOP,NOIAcOP ,NOTACOP,False,False,2,0.7142857142857143,0.7142857142857143,True,True,0,1.0,1.0,NOTACOP,NOIAcOP 
+plate_0401.png,content\plates\plate_0401.png,DL8CX 4850,DLBCX 4850,@DLBCX 4850,False,True,0,1.0,1.0,False,False,1,0.9473684210526316,0.8888888888888888,DL8CX 4850,DLBCX 4850
+plate_0404.png,content\plates\plate_0404.png,007PLATE.COM,(TPLATECOH,[DOTPLATE.COM,False,False,4,0.6666666666666667,0.6363636363636364,False,False,3,0.782608695652174,0.7272727272727273,007PLATE.COM,(TPLATECOH
+plate_0405.png,content\plates\plate_0405.png,DL7CN5617,DLZC N 5617|,DL 7C N 5617,False,False,2,0.8421052631578947,0.7777777777777778,False,True,0,1.0,1.0,DL7CN5617,DLZC N 5617|
+plate_0406.png,content\plates\plate_0406.png,VX54FVL,WXS4FUL,VX54 FVL,False,False,2,0.7142857142857143,0.7142857142857143,False,True,0,1.0,1.0,VX54FVL,WXS4FUL
+plate_0407.png,content\plates\plate_0407.png,TS009TC268,[NO TEXT],ELECT,False,False,8,0.2222222222222222,0.19999999999999996,False,False,9,0.1333333333333333,0.09999999999999998,TS009TC268,[NO TEXT]
+plate_0408.png,content\plates\plate_0408.png,MANISA,CANISA,MANISA,False,False,1,0.8333333333333334,0.8333333333333334,True,True,0,1.0,1.0,MANISA,CANISA
+plate_0409.png,content\plates\plate_0409.png,SKIP GAS,ISKIP GAS,SKIP GAS,False,False,1,0.9333333333333333,0.8571428571428572,True,True,0,1.0,1.0,SKIP GAS,ISKIP GAS
+plate_0410.png,content\plates\plate_0410.png,GOOGLE,GOOGLE,GOOGLE,True,True,0,1.0,1.0,True,True,0,1.0,1.0,GOOGLE,
+plate_0411.png,content\plates\plate_0411.png,OMG MOOV,onG Mout,ONG NOW,False,False,3,0.5714285714285714,0.5714285714285714,False,False,4,0.46153846153846156,0.4285714285714286,OMG MOOV,onG Mout
+plate_0412.png,content\plates\plate_0412.png,KA 03 AB 3380,M 02 AB  3380 ,HA 03 AB 3380,False,False,3,0.736842105263158,0.7,False,False,1,0.9,0.9,KA 03 AB 3380,M 02 AB  3380 
+plate_0414.png,content\plates\plate_0414.png,EAB001,EAB 0001,EAB 0001,False,False,1,0.9230769230769231,0.8333333333333334,False,False,1,0.9230769230769231,0.8333333333333334,EAB001,EAB 0001
+plate_0415.png,content\plates\plate_0415.png,PY56BXU,[pr,PY56 BXU,False,False,7,0.0,0.0,False,True,0,1.0,1.0,PY56BXU,[pr
+plate_0418.png,content\plates\plate_0418.png,CB7R605,CBZ - RGQS,CB7 - R605,False,False,2,0.7142857142857143,0.7142857142857143,False,True,0,1.0,1.0,CB7R605,CBZ - RGQS
+plate_0422.png,content\plates\plate_0422.png,nan,[NO TEXT],BARSH,False,False,8,0.0,-1.6666666666666665,False,False,5,0.0,-0.6666666666666667,nan,[NO TEXT]
+plate_0423.png,content\plates\plate_0423.png,KA03 AB 3380,03 AB   3380,NA 03 AB 3380,False,False,2,0.8888888888888888,0.8,False,False,1,0.9,0.9,KA03 AB 3380,03 AB   3380
+plate_0425.png,content\plates\plate_0425.png,BKTP 665,BKTP . 665,BKTP 665,False,True,0,1.0,1.0,True,True,0,1.0,1.0,BKTP 665,BKTP . 665
+plate_0426.png,content\plates\plate_0426.png,BSMART2,ISMARTZ,B SMARTZ,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,BSMART2,ISMARTZ
+plate_0431.png,content\plates\plate_0431.png,PZ62 FDX,P262 FDz |,PZ62 FDZ,False,False,2,0.8,0.7142857142857143,False,False,1,0.8571428571428572,0.8571428571428572,PZ62 FDX,P262 FDz |
+plate_0431.png,content\plates\plate_0431.png,nan,P262 FDz |,PZ62 FDZ,False,False,8,0.0,-1.6666666666666665,False,False,7,0.0,-1.3333333333333335,nan,P262 FDz |
+plate_0433.png,content\plates\plate_0433.png,MIDLYPH,HIDLYPH,MIDLYPH,False,False,1,0.8571428571428572,0.8571428571428572,True,True,0,1.0,1.0,MIDLYPH,HIDLYPH
+plate_0434.png,content\plates\plate_0434.png,DX103,[NO TEXT],TEXIDE,False,False,8,0.3076923076923077,-0.6000000000000001,False,False,4,0.36363636363636365,0.19999999999999996,DX103,[NO TEXT]
+plate_0435.png,content\plates\plate_0435.png,MPEACHW,MPEACHW,MPEACHW,True,True,0,1.0,1.0,True,True,0,1.0,1.0,MPEACHW,
+plate_0437.png,content\plates\plate_0437.png,WIW 123,WWTZJ,WILHALZET,False,False,3,0.5454545454545454,0.5,False,False,5,0.5333333333333333,0.16666666666666663,WIW 123,WWTZJ
+plate_0438.png,content\plates\plate_0438.png,DL3CBD5092,DL3C8D5c22|,DL3 GBD 5092,False,False,3,0.7619047619047619,0.7,False,False,1,0.9,0.9,DL3CBD5092,DL3C8D5c22|
+plate_0439.png,content\plates\plate_0439.png,TN21BZ0768,FTh 21 Bz 0768,TN 21 BZ 0768,False,False,3,0.7619047619047619,0.7,False,True,0,1.0,1.0,TN21BZ0768,FTh 21 Bz 0768
+plate_0440.png,content\plates\plate_0440.png,MH 20 BQ 20,MH 20B020,MH EDEG ED,False,True,0,1.0,1.0,False,False,6,0.25,0.25,MH 20 BQ 20,MH 20B020
+plate_0441.png,content\plates\plate_0441.png,GOOGLE,GOOGLE,GOOGLE,True,True,0,1.0,1.0,True,True,0,1.0,1.0,GOOGLE,
+plate_0443.png,content\plates\plate_0443.png,15-LK-10898,M5-Lk:108987,15-LK-10898,False,False,4,0.7,0.5555555555555556,True,True,0,1.0,1.0,15-LK-10898,M5-Lk:108987
+plate_0444.png,content\plates\plate_0444.png,FAST,FAST,E FAST __,True,True,0,1.0,1.0,False,False,3,0.7272727272727273,0.25,FAST,E FAST __
+plate_0445.png,content\plates\plate_0445.png,CH01AN0001,choianoqWu,CH01AN 0001,False,False,8,0.19999999999999996,0.19999999999999996,False,True,0,1.0,1.0,CH01AN0001,choianoqWu
+plate_0447.png,content\plates\plate_0447.png,HR26CE1485,HRZGCE 1485 =,HR26CE 1485,False,False,2,0.8571428571428572,0.8,False,True,0,1.0,1.0,HR26CE1485,HRZGCE 1485 =
+plate_0448.png,content\plates\plate_0448.png,TN21BC6225,"TN2IBC,6225",TIN 21 BC 6225,False,False,1,0.9523809523809523,0.9,False,False,1,0.9523809523809523,0.9,TN21BC6225,"TN2IBC,6225"
+plate_0449.png,content\plates\plate_0449.png,S7JDw,57 Jdn,[S7 JDY,False,False,2,0.6,0.6,False,False,2,0.7272727272727273,0.6,S7JDw,57 Jdn
+plate_0451.png,content\plates\plate_0451.png,B 2228HM,"B,2228HM ",B 2228 HM,False,False,1,0.9333333333333333,0.8571428571428572,False,True,0,1.0,1.0,B 2228HM,"B,2228HM "
+plate_0454.png,content\plates\plate_0454.png,MH14GN9239,9219,@ M&W 9239,False,False,7,0.4285714285714286,0.30000000000000004,False,False,6,0.5555555555555556,0.4,MH14GN9239,9219
+plate_0455.png,content\plates\plate_0455.png,OMGBCKY,OHG BCKY,[ONG BCKY],False,False,1,0.8571428571428572,0.8571428571428572,False,False,3,0.75,0.5714285714285714,OMGBCKY,OHG BCKY
+plate_0456.png,content\plates\plate_0456.png,W718AX,[NO TEXT],LEFERENCE,False,False,7,0.1428571428571429,-0.16666666666666674,False,False,9,0.1333333333333333,-0.5,W718AX,[NO TEXT]
+plate_0457.png,content\plates\plate_0457.png,20-89563,2089563,20-89563,False,True,0,1.0,1.0,True,True,0,1.0,1.0,20-89563,2089563
+plate_0458.png,content\plates\plate_0458.png,CRAIG,craiG,CRAIG,False,False,4,0.19999999999999996,0.19999999999999996,True,True,0,1.0,1.0,CRAIG,craiG
+plate_0460.png,content\plates\plate_0460.png,DX103,pX,0x 103,False,False,4,0.2857142857142857,0.19999999999999996,False,False,2,0.6,0.6,DX103,pX
+plate_0461.png,content\plates\plate_0461.png,EVO9FTW,EVQ?ETH,EVO2 FTM,False,False,3,0.5714285714285714,0.5714285714285714,False,False,2,0.7142857142857143,0.7142857142857143,EVO9FTW,EVQ?ETH
+plate_0462.png,content\plates\plate_0462.png,AB44887,AB 44887,AB 44887,False,True,0,1.0,1.0,False,True,0,1.0,1.0,AB44887,AB 44887
+plate_0463.png,content\plates\plate_0463.png,HR26AZ5927,HR26 42}5927,HR 26 AZ 5927,False,False,2,0.8571428571428572,0.8,False,True,0,1.0,1.0,HR26AZ5927,HR26 42}5927
+plate_0465.png,content\plates\plate_0465.png,AB44887,NB44887,AB 44887,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,AB44887,NB44887
+plate_0466.png,content\plates\plate_0466.png,MH15BD8877,HH15B08877,MH 15808877,False,False,2,0.8,0.8,False,False,1,0.9,0.9,MH15BD8877,HH15B08877
+plate_0470.png,content\plates\plate_0470.png,nan,[NO TEXT],EASIER,False,False,8,0.0,-1.6666666666666665,False,False,6,0.0,-1.0,nan,[NO TEXT]
+plate_0471.png,content\plates\plate_0471.png,BKWL 324,"BaHL "" 324",BKNL -324,False,False,3,0.6666666666666667,0.5714285714285714,False,False,1,0.8571428571428572,0.8571428571428572,BKWL 324,"BaHL "" 324"
+plate_0472.png,content\plates\plate_0472.png,DZV G49,DZV,DZVEG49,False,False,3,0.6666666666666667,0.5,False,False,1,0.9230769230769231,0.8333333333333334,DZV G49,DZV
+plate_0473.png,content\plates\plate_0473.png,M.771276,V.771276,M. 771276,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,M.771276,V.771276
+plate_0474.png,content\plates\plate_0474.png,MH 12 MR OG13,NH12MR Qj,[MH. 12.MR.0613],False,False,4,0.6666666666666667,0.6,False,False,3,0.8181818181818181,0.7,MH 12 MR OG13,NH12MR Qj
+plate_0476.png,content\plates\plate_0476.png,REAP3R,EREAP3R],: REAP 3R,False,False,2,0.8571428571428572,0.6666666666666667,False,False,1,0.9230769230769231,0.8333333333333334,REAP3R,EREAP3R]
+plate_0477.png,content\plates\plate_0477.png,9214,321a,9214,False,False,2,0.5,0.5,True,True,0,1.0,1.0,9214,321a
+plate_0478.png,content\plates\plate_0478.png,MMN306,Eb,MMNESS,False,False,6,0.0,0.0,False,False,3,0.5,0.5,MMN306,Eb
+plate_0479.png,content\plates\plate_0479.png,OX65AWD,AND,DX65 AND,False,False,5,0.4,0.2857142857142857,False,False,2,0.7142857142857143,0.7142857142857143,OX65AWD,AND
+plate_0480.png,content\plates\plate_0480.png,PUI8 BES,PUIB BES,PUIB BES,False,True,0,1.0,1.0,False,True,0,1.0,1.0,PUI8 BES,PUIB BES
+plate_0481.png,content\plates\plate_0481.png,M 1 7 1 0 8 FV1232,7dd,₩1232,False,False,11,0.1333333333333333,0.08333333333333337,False,False,8,0.47058823529411764,0.33333333333333337,M 1 7 1 0 8 FV1232,7dd
+plate_0483.png,content\plates\plate_0483.png,HR 26 BC 5514,HR 26 BC 5514],HR 26 BC 5514,False,False,1,0.9523809523809523,0.9,True,True,0,1.0,1.0,HR 26 BC 5514,HR 26 BC 5514]
+plate_0484.png,content\plates\plate_0484.png,SGQ511U,sg05i JU,SGOSL JU,False,False,3,0.5714285714285714,0.5714285714285714,False,False,1,0.8571428571428572,0.8571428571428572,SGQ511U,sg05i JU
+plate_0488.png,content\plates\plate_0488.png,nan,[NO TEXT],BASE,False,False,8,0.0,-1.6666666666666665,False,False,4,0.0,-0.33333333333333326,nan,[NO TEXT]
+plate_0489.png,content\plates\plate_0489.png,BMW,BHH,BMW,False,False,2,0.33333333333333337,0.33333333333333337,True,True,0,1.0,1.0,BMW,BHH
+plate_0491.png,content\plates\plate_0491.png,1268,1268-,1268-,False,True,0,1.0,1.0,False,True,0,1.0,1.0,1268,1268-
+plate_0494.png,content\plates\plate_0494.png,RK:977AF,RKE977F,RK:977AF,False,False,2,0.8,0.75,True,True,0,1.0,1.0,RK:977AF,RKE977F
+plate_0495.png,content\plates\plate_0495.png,YNTZDBC,FYNTZDBG,INTZDEG,False,False,2,0.8,0.7142857142857143,False,False,3,0.5714285714285714,0.5714285714285714,YNTZDBC,FYNTZDBG
+plate_0496.png,content\plates\plate_0496.png,EWW POOP,IRGINLA,EWW POOP,False,False,7,0.0,0.0,True,True,0,1.0,1.0,EWW POOP,IRGINLA
+plate_0497.png,content\plates\plate_0497.png,VIPER,VIPER,VIPER,True,True,0,1.0,1.0,True,True,0,1.0,1.0,VIPER,
+plate_0498.png,content\plates\plate_0498.png,LR33 TEE,ILR3? TEE],L.R33 TEE,False,False,3,0.75,0.5714285714285714,False,True,0,1.0,1.0,LR33 TEE,ILR3? TEE]
+plate_0502.png,content\plates\plate_0502.png,85-44,[NO TEXT],128.31,False,False,8,0.0,-1.0,False,False,5,0.2222222222222222,-0.25,85-44,[NO TEXT]
+plate_0502.png,content\plates\plate_0502.png,nan,[NO TEXT],128.31,False,False,8,0.0,-1.6666666666666665,False,False,5,0.0,-0.6666666666666667,nan,[NO TEXT]
+plate_0504.png,content\plates\plate_0504.png,MH 12 NE 8922,MH 12 NE 8922,WHIRNE BORR,True,True,0,1.0,1.0,False,False,5,0.5,0.5,MH 12 NE 8922,WHIRNE BORR
+plate_0505.png,content\plates\plate_0505.png,172 TMJ,112  Im,172 TMJ,False,False,4,0.36363636363636365,0.33333333333333337,True,True,0,1.0,1.0,172 TMJ,112  Im
+plate_0506.png,content\plates\plate_0506.png,BAD 231,BAD 231,BAD 231,True,True,0,1.0,1.0,True,True,0,1.0,1.0,BAD 231,
+plate_0507.png,content\plates\plate_0507.png,OX65 AWD,AwD,DX65 AND,False,False,5,0.4,0.2857142857142857,False,False,2,0.7142857142857143,0.7142857142857143,OX65 AWD,AwD
+plate_0508.png,content\plates\plate_0508.png,MH14GN 9239,MF,@ MW 9239,False,False,9,0.16666666666666663,0.09999999999999998,False,False,6,0.5882352941176471,0.4,MH14GN 9239,MF
+plate_0509.png,content\plates\plate_0509.png,BYHM.136,"BvhA"" [361",BYHM-136,False,False,6,0.375,0.1428571428571429,False,True,0,1.0,1.0,BYHM.136,"BvhA"" [361"
+plate_0510.png,content\plates\plate_0510.png,SKIP GAS,SKIP GAS,SKIP GAS,True,True,0,1.0,1.0,True,True,0,1.0,1.0,SKIP GAS,
+plate_0512.png,content\plates\plate_0512.png,MH20EE7596,"""7596",WH20EE 7596,False,False,6,0.5333333333333333,0.4,False,False,1,0.9,0.9,MH20EE7596,"""7596"
+plate_0513.png,content\plates\plate_0513.png,P3RV P,PJRV P,P3RY P,False,False,1,0.8,0.8,False,False,1,0.8,0.8,P3RV P,PJRV P
+plate_0514.png,content\plates\plate_0514.png,KA.03.MG.2784,Ka I8:MG : 2784,KA 03 MG 2784,False,False,5,0.6363636363636364,0.5,False,True,0,1.0,1.0,KA.03.MG.2784,Ka I8:MG : 2784
+plate_0515.png,content\plates\plate_0515.png,G526JHD,6526 JHD,G526 JHD,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,G526JHD,6526 JHD
+plate_0516.png,content\plates\plate_0516.png,CRAIG,CRAIG,CRAIG,True,True,0,1.0,1.0,True,True,0,1.0,1.0,CRAIG,
+plate_0517.png,content\plates\plate_0517.png,01CC1A0001,0 C Ia M,01 CC 1A 0001,False,False,7,0.4,0.30000000000000004,False,True,0,1.0,1.0,01CC1A0001,0 C Ia M
+plate_0518.png,content\plates\plate_0518.png,DZ17 YXR,D2I7 YXR,DZI7 YXR,False,True,0,1.0,1.0,False,True,0,1.0,1.0,DZ17 YXR,D2I7 YXR
+plate_0519.png,content\plates\plate_0519.png,KA1SER,KAISER,KAISER,False,True,0,1.0,1.0,False,True,0,1.0,1.0,KA1SER,KAISER
+plate_0520.png,content\plates\plate_0520.png,MH20BQ20,Mh2o8020,MILEDED BO,False,False,1,0.875,0.875,False,False,7,0.3529411764705882,0.125,MH20BQ20,Mh2o8020
+plate_0521.png,content\plates\plate_0521.png,BCG 986,2867,ECE 986,False,False,5,0.4,0.16666666666666663,False,False,2,0.6666666666666667,0.6666666666666667,BCG 986,2867
+plate_0522.png,content\plates\plate_0522.png,KLBOSS,boss,BOSS,False,False,3,0.6,0.5,False,False,2,0.8,0.6666666666666667,KLBOSS,boss
+plate_0523.png,content\plates\plate_0523.png,DL49 AK49,DL4? Ak49,DL49 AK49,False,False,2,0.75,0.75,True,True,0,1.0,1.0,DL49 AK49,DL4? Ak49
+plate_0524.png,content\plates\plate_0524.png,DL2C AG 0786,DL2C AG 6286,@DL 2C AG 0786,False,False,2,0.8,0.8,False,False,1,0.9523809523809523,0.9,DL2C AG 0786,DL2C AG 6286
+plate_0525.png,content\plates\plate_0525.png,IMGROOT,IMGROD,LINGRODT,False,False,2,0.7692307692307692,0.7142857142857143,False,False,3,0.6666666666666667,0.5714285714285714,IMGROOT,IMGROD
+plate_0526.png,content\plates\plate_0526.png,MH14GN9239,Mat,E MEX 9239,False,False,9,0.15384615384615385,0.09999999999999998,False,False,6,0.5555555555555556,0.4,MH14GN9239,Mat
+plate_0528.png,content\plates\plate_0528.png,ALR486,ALR 485,ALR 486,False,False,1,0.8333333333333334,0.8333333333333334,False,True,0,1.0,1.0,ALR486,ALR 485
+plate_0531.png,content\plates\plate_0531.png,PUI8BES,PUIe BES,PUIS BES,False,False,1,0.8571428571428572,0.8571428571428572,False,False,1,0.8571428571428572,0.8571428571428572,PUI8BES,PUIe BES
+plate_0532.png,content\plates\plate_0532.png,YES BOSS,YeS,YES BOSS,False,False,5,0.4,0.2857142857142857,True,True,0,1.0,1.0,YES BOSS,YeS
+plate_0533.png,content\plates\plate_0533.png,MH15BD8877,Nh45BD8877,*MH 15808877,False,False,3,0.7,0.7,False,False,2,0.8571428571428572,0.8,MH15BD8877,Nh45BD8877
+plate_0534.png,content\plates\plate_0534.png,CHIOOSE,ChIo OSE,CHIO OSE,False,False,1,0.8571428571428572,0.8571428571428572,False,True,0,1.0,1.0,CHIOOSE,ChIo OSE
+plate_0535.png,content\plates\plate_0535.png,LTM378,LTM 378,LTM-378,False,True,0,1.0,1.0,False,True,0,1.0,1.0,LTM378,LTM 378
+plate_0536.png,content\plates\plate_0536.png,9214,9212,9214,False,False,1,0.75,0.75,True,True,0,1.0,1.0,9214,9212
+plate_0537.png,content\plates\plate_0537.png,KLBOSS,8oss,BOSS,False,False,2,0.8,0.6666666666666667,False,False,2,0.8,0.6666666666666667,KLBOSS,8oss
+plate_0538.png,content\plates\plate_0538.png,BKWL324,BKLL,BKWL-324,False,False,4,0.5454545454545454,0.4285714285714286,False,True,0,1.0,1.0,BKWL324,BKLL
+plate_0539.png,content\plates\plate_0539.png,MH01DB0001,MH 01 0B 0001,MH 01 DB 0001,False,False,1,0.9,0.9,False,True,0,1.0,1.0,MH01DB0001,MH 01 0B 0001
+plate_0541.png,content\plates\plate_0541.png,802.11NVIRGINIA,~802,802.1IN,False,False,12,0.33333333333333337,0.1428571428571429,False,False,8,0.6,0.4285714285714286,802.11NVIRGINIA,~802
+plate_0542.png,content\plates\plate_0542.png,OS 802-HN,'8U,OS 802-HN,False,False,6,0.19999999999999996,0.1428571428571429,True,True,0,1.0,1.0,OS 802-HN,'8U
+plate_0543.png,content\plates\plate_0543.png,MMN306,[NO TEXT],MARKETING,False,False,8,0.2857142857142857,-0.33333333333333326,False,False,8,0.2666666666666667,-0.33333333333333326,MMN306,[NO TEXT]
+plate_0544.png,content\plates\plate_0544.png,WATT UP,UP,WATT UP,False,False,4,0.5,0.33333333333333337,True,True,0,1.0,1.0,WATT UP,UP
+plate_0545.png,content\plates\plate_0545.png,BIG TEAM,Lea ,ITEM,False,False,6,0.19999999999999996,0.1428571428571429,False,False,3,0.7272727272727273,0.5714285714285714,BIG TEAM,Lea 
+plate_0546.png,content\plates\plate_0546.png,TAXI,TaXt,TAX!,False,False,2,0.5,0.5,False,False,1,0.75,0.75,TAXI,TaXt
+plate_0547.png,content\plates\plate_0547.png,OR INNIE,DREIMIB,OR INNIE,False,False,5,0.4285714285714286,0.2857142857142857,True,True,0,1.0,1.0,OR INNIE,DREIMIB
+plate_0548.png,content\plates\plate_0548.png,9214,9214,9214,True,True,0,1.0,1.0,True,True,0,1.0,1.0,9214,
+plate_0549.png,content\plates\plate_0549.png,MH14BN7077,MH I4BN 7077,MH 14 EN 7077,False,True,0,1.0,1.0,False,False,1,0.9,0.9,MH14BN7077,MH I4BN 7077
+plate_0550.png,content\plates\plate_0550.png,BJR216,0i82L6,BURG,False,False,3,0.6666666666666667,0.5,False,False,4,0.4,0.33333333333333337,BJR216,0i82L6
+plate_0551.png,content\plates\plate_0551.png,KWID,KWID,KWID,True,True,0,1.0,1.0,True,True,0,1.0,1.0,KWID,
+plate_0552.png,content\plates\plate_0552.png,YSX213,NSk2iJ,YSX-213,False,False,4,0.33333333333333337,0.33333333333333337,False,True,0,1.0,1.0,YSX213,NSk2iJ
+plate_0557.png,content\plates\plate_0557.png,nan,[NO TEXT],LENGTH,False,False,8,0.0,-1.6666666666666665,False,False,6,0.0,-1.0,nan,[NO TEXT]
+plate_0558.png,content\plates\plate_0558.png,DL7CN5617,DLZC N 5617,DL 7C N 5617,False,False,1,0.8888888888888888,0.8888888888888888,False,True,0,1.0,1.0,DL7CN5617,DLZC N 5617
+plate_0559.png,content\plates\plate_0559.png,TN99F2378,TN93,TN 99 F 2378,False,False,5,0.6153846153846154,0.4444444444444444,False,True,0,1.0,1.0,TN99F2378,TN93
+plate_0560.png,content\plates\plate_0560.png,CZ17KOD,Czi7 Kod,CZI7 KOD,False,False,3,0.5714285714285714,0.5714285714285714,False,True,0,1.0,1.0,CZ17KOD,Czi7 Kod
+plate_0562.png,content\plates\plate_0562.png,MH-31EARSS,MI-#,MIRSS,False,False,7,0.33333333333333337,0.2222222222222222,False,False,4,0.7142857142857143,0.5555555555555556,MH-31EARSS,MI-#
+plate_0563.png,content\plates\plate_0563.png,HR26CU6799,TR 26CU6799,HR 26 CU 6799,False,False,1,0.9,0.9,False,True,0,1.0,1.0,HR26CU6799,TR 26CU6799
+plate_0564.png,content\plates\plate_0564.png,KL54A2670,KL54 42670,KL54 A 2670,False,False,1,0.8888888888888888,0.8888888888888888,False,True,0,1.0,1.0,KL54A2670,KL54 42670
+plate_0565.png,content\plates\plate_0565.png,4GETOIL,LGEI QIL,ACETTOTTE,False,False,2,0.7142857142857143,0.7142857142857143,False,False,6,0.375,0.1428571428571429,4GETOIL,LGEI QIL
+plate_0566.png,content\plates\plate_0566.png,G526 JHD,6526 JHD,G526 JHD,False,False,1,0.8571428571428572,0.8571428571428572,True,True,0,1.0,1.0,G526 JHD,6526 JHD
+plate_0567.png,content\plates\plate_0567.png,BAD 231,BAD 231,BAD 231,True,True,0,1.0,1.0,True,True,0,1.0,1.0,BAD 231,
+plate_0569.png,content\plates\plate_0569.png,UP16TC1368,UPIOIC1JOO,UPISTCISES,False,False,5,0.5,0.5,False,False,4,0.6,0.6,UP16TC1368,UPIOIC1JOO
+plate_0570.png,content\plates\plate_0570.png,001,co6 OUL,COG OOL,False,False,3,0.6666666666666667,0.0,False,False,3,0.6666666666666667,0.0,001,co6 OUL
+plate_0571.png,content\plates\plate_0571.png,HR26BC5514,HR 26 BC 5514,HR 26 BC SSI4,False,True,0,1.0,1.0,False,True,0,1.0,1.0,HR26BC5514,HR 26 BC 5514
+plate_0575.png,content\plates\plate_0575.png,VU63GTY,[NO TEXT],TOTAL,False,False,7,0.1333333333333333,0.0,False,False,7,0.16666666666666663,0.0,VU63GTY,[NO TEXT]
+plate_0575.png,content\plates\plate_0575.png,nan,[NO TEXT],TOTAL,False,False,8,0.0,-1.6666666666666665,False,False,5,0.0,-0.6666666666666667,nan,[NO TEXT]
+plate_0576.png,content\plates\plate_0576.png,MH14DX9937,@hL4dl99d,MH 14DX 9937,False,False,6,0.42105263157894735,0.4,False,True,0,1.0,1.0,MH14DX9937,@hL4dl99d
+plate_0580.png,content\plates\plate_0580.png,TSLA S1,[NO TEXT],GROSS,False,False,7,0.2857142857142857,-0.16666666666666674,False,False,5,0.36363636363636365,0.16666666666666663,TSLA S1,[NO TEXT]
+plate_0580.png,content\plates\plate_0580.png,nan,[NO TEXT],GROSS,False,False,8,0.0,-1.6666666666666665,False,False,5,0.0,-0.6666666666666667,nan,[NO TEXT]
+plate_0585.png,content\plates\plate_0585.png,nan,[NO TEXT],LUCKY,False,False,8,0.0,-1.6666666666666665,False,False,5,0.0,-0.6666666666666667,nan,[NO TEXT]
+plate_0586.png,content\plates\plate_0586.png,MHO1AV8866,NHO|av8866,-MH01AV8866,False,False,3,0.7,0.7,False,True,0,1.0,1.0,MHO1AV8866,NHO|av8866
+plate_0588.png,content\plates\plate_0588.png,304O61C,602q01,3046 610,False,False,5,0.46153846153846156,0.2857142857142857,False,False,2,0.7142857142857143,0.7142857142857143,304O61C,602q01
+plate_0589.png,content\plates\plate_0589.png,AoDoooo8,@A doooge,EA DOODOS,False,False,5,0.5,0.375,False,False,4,0.625,0.5,AoDoooo8,@A doooge
+plate_0591.png,content\plates\plate_0591.png,NBEYOND,NBEYOND,NBEYOND,True,True,0,1.0,1.0,True,True,0,1.0,1.0,NBEYOND,
+plate_0592.png,content\plates\plate_0592.png,AoDoooo8,MA,LA DOODS,False,False,8,0.19999999999999996,0.0,False,False,5,0.5333333333333333,0.375,AoDoooo8,MA
+plate_0593.png,content\plates\plate_0593.png,PG0MN112,PG VNi12,PG MN112,False,False,3,0.6666666666666667,0.625,False,False,1,0.9333333333333333,0.875,PG0MN112,PG VNi12
+plate_0594.png,content\plates\plate_0594.png,KAO5MG1909,Ka,KA G5 MG 1999,False,False,9,0.16666666666666663,0.09999999999999998,False,False,2,0.8,0.8,KAO5MG1909,Ka
+plate_0595.png,content\plates\plate_0595.png,YWORRY,MMORRY,YWORRY,False,False,2,0.6666666666666667,0.6666666666666667,True,True,0,1.0,1.0,YWORRY,MMORRY
+plate_0596.png,content\plates\plate_0596.png,KA09MA2662, 2662,: 2662,False,False,6,0.5714285714285714,0.4,False,False,6,0.5333333333333333,0.4,KA09MA2662, 2662
